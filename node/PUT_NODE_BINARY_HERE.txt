@@ -1,0 +1,11 @@
+Put the Node binary for YOUR system in this folder (v18 or newer):
+
+  Windows : node.exe
+  macOS   : node
+
+Where to get it: https://nodejs.org/en/download and select Standalone Binary
+
+  Windows Intel/AMD  ->  Choose Windows running a x64 architecture        ->  Take "node.exe" file
+  Windows ARM          ->  Choose Windows running a ARM64 architecture  ->  Take "node.exe" file
+  Mac Intel                   ->  Choose macOS running a x64 architecture           ->  Take "node" file in "bin" folder
+  Mac Apple Silicon     ->  Choose macOS running a ARM64 architecture     ->  Take "node" file in "bin" folder

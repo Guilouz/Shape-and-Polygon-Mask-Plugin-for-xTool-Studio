@@ -27,13 +27,13 @@ Il s'agit d'un portage du plugin de Gatis Udrass, auquel j'ai ajouté quelques n
 - 8 modes de forme intégrés (via le menu déroulant) :
   - **`○ Cercle`** → Cercle parfait `1:1` (idéal pour les dessous de verre ronds, pièces, médaillons et ornements).
   - **`⬭ Ovale / Ellipse`** → Ovale / ellipse à proportions libres avec 8 poignées de redimensionnement.
-  - **`▭ Rectangle`** → Rectangle à proportions libres avec `Rayon des coins` réglable (`0–200 px`).
-  - **`□ Carré`** → Carré `1:1` à côtés égaux avec `Rayon des coins` réglable (`0–200 px`).
+  - **`▭ Rectangle`** → Rectangle à proportions libres avec `Rayon des coins` réglable (`0–200 mm`).
+  - **`□ Carré`** → Carré `1:1` à côtés égaux avec `Rayon des coins` réglable (`0–200 m`).
   - **`⏢ Quadrilatère 4 points`** → Quadrilatère à 4 coins, chacun pouvant être déplacé indépendamment pour s'adapter aux objets en angle ou en perspective.
   - **`⭔ Polygone par points`** → Cliquez n'importe où sur l'image pour placer des points qui se relient immédiatement en une forme fermée en direct. Faites glisser un point pour l'ajuster, faites glisser le milieu d'un bord pour insérer de nouveaux points, faites un clic droit sur un point pour le supprimer, ou faites glisser le centre `⊕` pour déplacer tout le polygone.
-  - **`◎ Anneau`** → Anneau circulaire/elliptique avec `Épaisseur de l'anneau` réglable (`2–200 px`).
+  - **`◎ Anneau`** → Anneau circulaire/elliptique avec `Épaisseur de l'anneau` réglable (`0.5-100 mm`).
   - **`✎ Lasso à main levée`** → Dessinez une boucle à main levée et repositionnez-la si nécessaire.
-- Adoucissement des bords (0–40 px) : Adoucit les bords du masque pour des transitions fluides en gravure et en impression UV/encre.
+- Adoucissement des bords (0–25 mm) : Adoucit les bords du masque pour des transitions fluides en gravure et en impression UV/encre.
 - Forme centrée en 1 clic (`⊕ Créer une forme centrée`) : Place instantanément une forme centrée et ajustable, adaptée à votre image.
 - Fonctions Annuler / Rétablir complètes (`Ctrl+Z` / `Ctrl+Y` sous Windows et `Cmd+Z` / `Cmd+Y` sous macOS) et synchronisation en temps réel de l'origine et de l'aperçu.
 - Gestion des masques : Enregistrez, exportez (.json, .png) ou importez (.svg, .png, .jpg, .jpeg, .webp, .json) des fichiers de masque.

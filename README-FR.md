@@ -35,8 +35,8 @@ Il s'agit d'un portage du plugin de Gatis Udrass, auquel j'ai ajouté quelques n
   - **`✎ Lasso à main levée`** → Dessinez une boucle à main levée et repositionnez-la si nécessaire.
 - Adoucissement des bords (0–25 mm) : Adoucit les bords du masque pour des transitions fluides en gravure et en impression UV/encre.
 - Forme centrée en 1 clic (`⊕ Créer une forme centrée`) : Place instantanément une forme centrée et ajustable, adaptée à votre image.
-- Fonctions Annuler / Rétablir complètes (`Ctrl+Z` / `Ctrl+Y` sous Windows et `Cmd+Z` / `Cmd+Y` sous macOS) et synchronisation en temps réel de l'origine et de l'aperçu.
 - Gestion des masques : Enregistrez, exportez (.json, .png) ou importez (.svg, .png, .jpg, .jpeg, .webp, .json) des fichiers de masque.
+- Formes modifiables : Toutes les formes créées restent modifiables jusqu’à ce que vous cliquiez sur `Appliquer` ; elles peuvent par ailleurs être gérées.
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png" alt="Plugin" />
 

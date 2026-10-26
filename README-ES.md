@@ -27,13 +27,13 @@ Este es un port del plugin de Gatis Udrass, al que he añadido algunas funciones
 - 8 modos de forma integrados (mediante el menú desplegable):
   - **`○ Círculo`** → Círculo perfecto `1:1` (ideal para posavasos redondos, monedas, medallones y adornos).
   - **`⬭ Óvalo / Elipse`** → Óvalo / elipse de proporción libre con 8 tiradores de redimensionado.
-  - **`▭ Rectángulo`** → Rectángulo de proporción libre con `Radio de esquina` ajustable (`0–200 px`).
-  - **`□ Cuadrado`** → Cuadrado `1:1` de lados iguales con `Radio de esquina` ajustable (`0–200 px`).
+  - **`▭ Rectángulo`** → Rectángulo de proporción libre con `Radio de esquina` ajustable (`0–200 mm`).
+  - **`□ Cuadrado`** → Cuadrado `1:1` de lados iguales con `Radio de esquina` ajustable (`0–200 mm`).
   - **`⏢ Cuadrilátero de 4 puntos`** → Cuadrilátero de 4 esquinas en el que cada una puede arrastrarse de forma independiente para adaptarse a objetos inclinados o en perspectiva.
   - **`⭔ Polígono por puntos`** → Haz clic en cualquier lugar de la imagen para colocar puntos que se conectan de inmediato en una forma cerrada en vivo. Arrastra cualquier punto para ajustarlo, arrastra el punto medio de un borde para insertar nuevos puntos, haz clic derecho en un punto para eliminarlo o arrastra el centro `⊕` para mover todo el polígono.
-  - **`◎ Anillo`** → Anillo circular/elíptico con `Grosor del anillo` ajustable (`2–200 px`).
+  - **`◎ Anillo`** → Anillo circular/elíptico con `Grosor del anillo` ajustable (`0.5-100 mm`).
   - **`✎ Lazo a mano alzada`** → Dibuja un bucle a mano alzada y reposiciónalo si hace falta.
-- Suavizado de bordes (`0–40 px`): Suaviza los bordes de la máscara para lograr transiciones fluidas en grabado e impresión UV/tinta.
+- Suavizado de bordes (`0–25 mm`): Suaviza los bordes de la máscara para lograr transiciones fluidas en grabado e impresión UV/tinta.
 - Forma centrada con 1 clic (`⊕ Crear forma centrada`): Coloca al instante una forma centrada y ajustable adaptada a tu imagen.
 - Deshacer / Rehacer completos (`Ctrl+Z` / `Ctrl+Y` en Windows y `Cmd+Z` / `Cmd+Y` en macOS) y sincronización en tiempo real entre el original y la vista previa.
 - Gestión de máscaras: Guarda, exporta (.json, .png) o importa (.svg, .png, .jpg, .jpeg, .webp, .json) archivos de máscara.

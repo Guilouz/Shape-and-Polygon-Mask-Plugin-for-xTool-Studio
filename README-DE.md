@@ -27,13 +27,13 @@ Dies ist eine Portierung des Plugins von Gatis Udrass, zu dem ich einige neue Fu
 - 8 integrierte Formmodi (über das Dropdown-Menü):
   - **`○ Kreis`** → Perfekter `1:1`-Kreis (ideal für runde Untersetzer, Münzen, Medaillons und Anhänger).
   - **`⬭ Oval / Ellipse`** → Oval / Ellipse mit freiem Seitenverhältnis und 8 Skalierungsgriffen.
-  - **`▭ Rechteck`** → Rechteck mit freiem Seitenverhältnis und einstellbarem `Eckenradius` (`0–200 px`).
-  - **`□ Quadrat`** → Quadrat mit gleich langen Seiten (`1:1`) und einstellbarem `Eckenradius` (`0–200 px`).
+  - **`▭ Rechteck`** → Rechteck mit freiem Seitenverhältnis und einstellbarem `Eckenradius` (`0–200 mm`).
+  - **`□ Quadrat`** → Quadrat mit gleich langen Seiten (`1:1`) und einstellbarem `Eckenradius` (`0–200 m`).
   - **`⏢ Viereck (4 Punkte)`** → Viereck mit 4 Ecken, von denen jede einzeln verschoben werden kann, um schräge oder perspektivisch verzerrte Objekte nachzubilden.
   - **`⭔ Punkt-Polygon`** → Klicken Sie irgendwo auf das Bild, um Punkte zu setzen, die sich sofort zu einer geschlossenen Live-Form verbinden. Ziehen Sie einen Punkt, um ihn anzupassen, ziehen Sie die Kantenmitte, um neue Punkte einzufügen, klicken Sie mit der rechten Maustaste auf einen Punkt, um ihn zu löschen, oder ziehen Sie den Mittelpunkt `⊕`, um das gesamte Polygon zu verschieben.
-  - **`◎ Ring`** → Kreis-/ellipsenförmiger Ring mit einstellbarer `Ringbreite` (`2–200 px`).
+  - **`◎ Ring`** → Kreis-/ellipsenförmiger Ring mit einstellbarer `Ringbreite` (`0.5-100 mm`).
   - **`✎ Freihand-Lasso`** → Zeichnen Sie eine Schleife aus freier Hand und positionieren Sie sie bei Bedarf neu.
-- Weiche Kante (0–40 px): Macht die Maskenkanten sanft für weiche Übergänge bei Gravur und UV-/Tintendruck.
+- Weiche Kante (0–25 mm): Macht die Maskenkanten sanft für weiche Übergänge bei Gravur und UV-/Tintendruck.
 - Zentrierte Form per Klick (`⊕ Zentrierte Form erstellen`): Platziert sofort eine zentrierte, anpassbare Form, die zu Ihrem Bild passt.
 - Vollständiges Rückgängig / Wiederholen (`Strg+Z` / `Strg+Y` unter Windows und `Cmd+Z` / `Cmd+Y` unter macOS) sowie Echtzeit-Synchronisierung von Original und Vorschau.
 - Maskenverwaltung: Maskendateien speichern, exportieren (.json, .png) oder importieren (.svg, .png, .jpg, .jpeg, .webp, .json).

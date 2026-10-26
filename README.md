@@ -11,6 +11,11 @@ Draw, center, resize, rotate, and refine your masks **instantly—no need to wai
 This is a port of Gatis Udrass’s plugin, to which I have added a few new features and fixes.
 
 
+<p align="left">
+  <img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/plugin2.png?raw=true" alt="Plugin" />
+</p>
+
+
 **PLEASE READ THE README BEFORE USE:**
 
 [![en](https://img.shields.io/badge/README-English-yellow.svg)](https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/README-EN.md)

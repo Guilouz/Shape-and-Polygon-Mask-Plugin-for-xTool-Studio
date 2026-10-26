@@ -154,6 +154,7 @@ Per rimuovere il plugin e ripristinare in qualsiasi momento l'archivio originale
 | Scorciatoia | Azione |
 |:--|:--|
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd> | **Indietro**: Annulla l'ultima modifica o l'ultimo *Applica* |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Ripristina**: Ripristina l'ultima modifica |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copia** la forma attiva |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Incolla** la forma copiata |
 | <kbd>Invio</kbd> | **Applica** |

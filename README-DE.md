@@ -154,6 +154,7 @@ So entfernen Sie das Plugin und stellen jederzeit das unveränderte Original-Arc
 | Kürzel | Aktion |
 |:--|:--|
 | <kbd>Strg</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd> | **Rückgängig**: Macht die letzte Änderung oder das letzte *Anwenden* rückgängig |
+| <kbd>Strg</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Wiederholen**: Stellt die letzte Änderung wieder her |
 | <kbd>Strg</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | Aktive Form **kopieren** |
 | <kbd>Strg</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | Kopierte Form **einfügen** |
 | <kbd>Eingabe</kbd> | **Anwenden** |

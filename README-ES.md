@@ -149,6 +149,40 @@ Para eliminar el plugin y restaurar en cualquier momento el archivo original sin
 
 <br />
 
+## ⌨️ Atajos de teclado
+
+| Atajo | Acción |
+|:--|:--|
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd> | **Deshacer**: revierte la última modificación o el último *Aplicar* |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Rehacer**: restaura la última modificación |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copiar** la forma activa |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Pegar** la forma copiada |
+| <kbd>Intro</kbd> | **Aplicar** |
+| <kbd>Esc</kbd> | **Cancelar** |
+| <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Mover la forma activa **1 mm** (0,05 in) |
+| <kbd>Mayús</kbd> + <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Mover la forma activa **5 mm** (0,25 in) |
+| <kbd>⌫</kbd> / <kbd>Supr</kbd> | *Polígono*: eliminar el último punto |
+
+> [!NOTE]
+> <kbd>Intro</kbd>, <kbd>Esc</kbd> y las flechas solo responden cuando hay al menos una forma pendiente.
+> Los atajos se desactivan mientras se escribe en un campo (por ejemplo, el valor de un control deslizante).
+
+## 🖱️ Ratón
+
+| Gesto | Acción |
+|:--|:--|
+| **Arrastrar** | Dibujar la forma |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + **Arrastrar** | Invertir el modo de trazado: ⌖ Desde el centro ↔ ⛶ Desde la esquina |
+| <kbd>Mayús</kbd> + **Arrastrar** | Círculo → Elipse · Cuadrado → Rectángulo · Anillo → Anillo libre |
+| <kbd>Mayús</kbd> + **Rotación** | Rotar en pasos de **15°** |
+| **Clic** en una forma | Seleccionarla (pasa a ser la activa) |
+| **Clic** en un punto *(polígono)* | Seleccionar y mover el punto |
+| <kbd>Alt</kbd> + **Clic** en un punto *(polígono)* | Eliminar ese punto |
+| **Clic derecho** *(polígono)* | Eliminar el punto bajo el cursor o, si no hay, el último punto |
+| **Clic** en los botones del lienzo | Cancelar · Deshacer · Aplicar |
+
+<br />
+
 ## 💗 Créditos
 
 Un agradecimiento especial a **Gatis Udrass** por su brillante plugin.

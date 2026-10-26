@@ -35,8 +35,8 @@ This is a port of Gatis Udrass’s plugin, to which I have added a few new featu
   - **`✎ Freehand Lasso`** → Draw a freehand loop and reposition if needed.
 - Edge Feathering (`0–25 mm`): Smoothly soften mask edges for engraving and UV/ink printing transitions.
 - 1-Click Centered Shape (`⊕ Create Centered Shape`): Instantly places a centered, adjustable shape fitted to your image.
-- Full Undo / Redo (`Ctrl+Z` / `Ctrl+Y` on Windows and `Cmd+Z` / `Cmd+Y` on macOS) & real-time Origin / Preview synchronization.
 - Mask management: Save, export (.json, .png) or import (.svg, .png .jpg .jpeg .webp, .json) mask files.
+- Editable Shapes: All created shapes now stay editable until you click `Apply` and they can be managed.
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png" alt="Plugin" />
 

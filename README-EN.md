@@ -153,7 +153,8 @@ To remove the plugin and restore the original unpatched xTool Studio archive at 
 
 | Shortcut | Action |
 |:--|:--|
-| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd> | **Undo**: Reverts the last edit or the last *Apply* |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd> | **Undo**: Revert the last edit or the last *Apply* |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Redo**: Restore the last edit |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copy** the active shape |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Paste** the copied shape |
 | <kbd>Enter</kbd> | **Apply** |

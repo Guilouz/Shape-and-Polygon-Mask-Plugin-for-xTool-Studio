@@ -154,6 +154,7 @@ Pour supprimer le plugin et restaurer à tout moment l'archive d'origine non mod
 | Raccourci | Action |
 |:--|:--|
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd> | **Retour** : Annule la dernière modification ou le dernier *Appliquer* |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Rétablir** : Restaure la dernière modification |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copier** la forme active |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Coller** la forme copiée |
 | <kbd>Entrée</kbd> | **Appliquer** |

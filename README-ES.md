@@ -35,8 +35,8 @@ Este es un port del plugin de Gatis Udrass, al que he añadido algunas funciones
   - **`✎ Lazo a mano alzada`** → Dibuja un bucle a mano alzada y reposiciónalo si hace falta.
 - Suavizado de bordes (`0–25 mm`): Suaviza los bordes de la máscara para lograr transiciones fluidas en grabado e impresión UV/tinta.
 - Forma centrada con 1 clic (`⊕ Crear forma centrada`): Coloca al instante una forma centrada y ajustable adaptada a tu imagen.
-- Deshacer / Rehacer completos (`Ctrl+Z` / `Ctrl+Y` en Windows y `Cmd+Z` / `Cmd+Y` en macOS) y sincronización en tiempo real entre el original y la vista previa.
 - Gestión de máscaras: Guarda, exporta (.json, .png) o importa (.svg, .png, .jpg, .jpeg, .webp, .json) archivos de máscara.
+- Formas editables: Todas las formas creadas permanecen editables hasta que se hace clic en `Aplicar`, y es posible gestionarlas.
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png" alt="Plugin" />
 

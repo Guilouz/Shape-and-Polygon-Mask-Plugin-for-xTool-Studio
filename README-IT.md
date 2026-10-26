@@ -27,13 +27,13 @@ Questo è un port del plugin di Gatis Udrass, al quale ho aggiunto alcune nuove 
 - 8 modalità di forma integrate (dal menu a discesa):
   - **`○ Cerchio`** → Cerchio perfetto `1:1` (ideale per sottobicchieri rotondi, monete, medaglioni e ornamenti).
   - **`⬭ Ovale / Ellisse`** → Ovale / ellisse a proporzioni libere con 8 maniglie di ridimensionamento.
-  - **`▭ Rettangolo`** → Rettangolo a proporzioni libere con `Raggio degli angoli` regolabile (`0–200 px`).
-  - **`□ Quadrato`** → Quadrato `1:1` a lati uguali con `Raggio degli angoli` regolabile (`0–200 px`).
+  - **`▭ Rettangolo`** → Rettangolo a proporzioni libere con `Raggio degli angoli` regolabile (`0–200 mm`).
+  - **`□ Quadrato`** → Quadrato `1:1` a lati uguali con `Raggio degli angoli` regolabile (`0–200 mm`).
   - **`⏢ Quadrilatero a 4 punti`** → Quadrilatero a 4 angoli, ognuno dei quali può essere trascinato in modo indipendente per adattarsi a oggetti inclinati o in prospettiva.
   - **`⭔ Poligono a punti`** → Fai clic in qualsiasi punto dell'immagine per posizionare dei punti che si collegano subito in una forma chiusa in tempo reale. Trascina un punto per regolarlo, trascina il punto medio di un bordo per inserire nuovi punti, fai clic destro su un punto per eliminarlo oppure trascina il centro `⊕` per spostare l'intero poligono.
-  - **`◎ Anello`** → Anello circolare/ellittico con `Spessore dell'anello` regolabile (`2–200 px`).
+  - **`◎ Anello`** → Anello circolare/ellittico con `Spessore dell'anello` regolabile (`0.5-100 mm`).
   - **`✎ Lazo a mano libera`** → Disegna un anello a mano libera e riposizionalo se necessario.
-- Sfumatura dei bordi (`0–40 px`): ammorbidisce i bordi della maschera per transizioni fluide nell'incisione e nella stampa UV/a inchiostro.
+- Sfumatura dei bordi (`0–25 mm`): ammorbidisce i bordi della maschera per transizioni fluide nell'incisione e nella stampa UV/a inchiostro.
 - Forma centrata con 1 clic (`⊕ Crea forma centrata`): posiziona all'istante una forma centrata e regolabile, adattata alla tua immagine.
 - Annulla / Ripeti completi (`Ctrl+Z` / `Ctrl+Y` su Windows e `Cmd+Z` / `Cmd+Y` su macOS) e sincronizzazione in tempo reale tra originale e anteprima.
 - Gestione delle maschere: salva, esporta (.json, .png) o importa (.svg, .png, .jpg, .jpeg, .webp, .json) file di maschera.

@@ -8,7 +8,7 @@ Sie fügt eine komplette Palette interaktiver geometrischer Formen und ein Polyg
 
 Zeichnen, zentrieren, skalieren, drehen und verfeinern Sie Ihre Masken **sofort – ganz ohne Warten auf die KI-Extraktion!**
 
-Dies ist eine Portierung des Plugins von Gatis Udrass, zu dem ich einige neue Funktionen und Korrekturen hinzugefügt habe.
+Dies ist eine Portierung des Plugins von Gatis Udrass, die ich um neue Funktionen und Fehlerbehebungen erweitert habe.
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin2.png" alt="Plugin" />
 

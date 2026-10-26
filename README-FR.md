@@ -149,6 +149,39 @@ Pour supprimer le plugin et restaurer à tout moment l'archive d'origine non mod
 
 <br />
 
+## ⌨️ Raccourcis clavier
+
+| Raccourci | Action |
+|:--|:--|
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd> | **Retour** : Annule la dernière modification ou le dernier *Appliquer* |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copier** la forme active |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Coller** la forme copiée |
+| <kbd>Entrée</kbd> | **Appliquer** |
+| <kbd>Échap</kbd> | **Annuler** |
+| <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Déplacer la forme active de **1 mm** (0,05 in) |
+| <kbd>Maj</kbd> + <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Déplacer la forme active de **5 mm** (0,25 in) |
+| <kbd>⌫</kbd> / <kbd>Suppr</kbd> | *Polygone* : Supprimer le dernier point |
+
+> [!NOTE]
+> <kbd>Entrée</kbd>, <kbd>Échap</kbd> et les flèches ne réagissent que lorsqu'au moins une forme est en attente.
+> Les raccourcis sont désactivés pendant la saisie dans un champ (valeur d'un curseur, par exemple).
+
+## 🖱️ Souris
+
+| Geste | Action |
+|:--|:--|
+| **Glisser** | Dessiner la forme |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + **Glisser** | Inverser le mode de tracé : ⌖ Depuis un centre ↔ ⛶ Depuis un coin |
+| <kbd>Maj</kbd> + **Glisser** | Cercle → Ellipse · Carré → Rectangle · Anneau → Anneau libre |
+| <kbd>Maj</kbd> + **Rotation** | Rotation par pas de **15°** |
+| **Clic** sur une forme | La sélectionner (elle devient active) |
+| **Clic** sur un point *(polygone)* | Sélectionner et déplacer le point |
+| <kbd>Alt</kbd> + **Clic** sur un point *(polygone)* | Supprimer ce point |
+| **Clic droit** *(polygone)* | Supprimer le point sous le curseur, sinon le dernier point |
+| **Clic** sur les boutons du canevas | Annuler · Retour · Appliquer |
+
+<br />
+
 ## 💗 Crédits
 
 Un grand merci à **Gatis Udrass** pour son brillant plugin.

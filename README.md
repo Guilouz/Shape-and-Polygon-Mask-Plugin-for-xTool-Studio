@@ -8,7 +8,7 @@ It adds a full suite of interactive geometric shapes and a point-by-point polygo
 
 Draw, center, resize, rotate, and refine your masks **instantly—no need to wait for AI extraction!**
 
-This is a port of Gatis Udrass’s plugin, to which I have added a few new features and fixes.
+This is a port of Gatis Udrass’s plugin, to which I have added new features and fixes.
 
 
 <p align="left">

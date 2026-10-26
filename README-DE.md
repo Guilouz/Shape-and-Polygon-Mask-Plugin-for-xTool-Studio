@@ -10,6 +10,8 @@ Zeichnen, zentrieren, skalieren, drehen und verfeinern Sie Ihre Masken **sofort 
 
 Dies ist eine Portierung des Plugins von Gatis Udrass, zu dem ich einige neue Funktionen und Korrekturen hinzugefügt habe.
 
+<img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin2.png" alt="Plugin" />
+
 <br />
 
 ## ✨ Hauptfunktionen
@@ -35,6 +37,8 @@ Dies ist eine Portierung des Plugins von Gatis Udrass, zu dem ich einige neue Fu
 - Zentrierte Form per Klick (`⊕ Zentrierte Form erstellen`): Platziert sofort eine zentrierte, anpassbare Form, die zu Ihrem Bild passt.
 - Vollständiges Rückgängig / Wiederholen (`Strg+Z` / `Strg+Y` unter Windows und `Cmd+Z` / `Cmd+Y` unter macOS) sowie Echtzeit-Synchronisierung von Original und Vorschau.
 - Maskenverwaltung: Maskendateien speichern, exportieren (.json, .png) oder importieren (.svg, .png, .jpg, .jpeg, .webp, .json).
+
+<img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png" alt="Plugin" />
 
 <br />
 
@@ -83,8 +87,11 @@ Dies ist eine Portierung des Plugins von Gatis Udrass, zu dem ich einige neue Fu
 
   **1.** Schließen Sie **xTool Studio**, falls es gerade läuft.<br />
   **2.** Doppelklicken Sie auf die Datei **`windows.bat`**.<br />
-  **3.** Geben Sie **`1`** ein, um den Installer zu starten, und wählen Sie die gewünschte Sprache.<br />
-  **4.** Öffnen Sie **xTool Studio**, fügen Sie ein Bild hinzu, öffnen Sie `Intelligente Maske` und wählen Sie unter `Extraktionsmethoden` den Eintrag `Maske`.
+  **3.** Geben Sie **`1`** ein, um den Installer zu starten:<br />
+         <p align="left"><img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/menu-windows.png" alt="Windows Menu" width="700" /></p>
+  **4.** Und wählen Sie die gewünschte Sprache:
+         <p align="left"><img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/installer-windows.png" alt="Windows Installer" width="700" /></p>
+  **5.** Öffnen Sie **xTool Studio**, fügen Sie ein Bild hinzu, öffnen Sie `Intelligente Maske` und wählen Sie unter `Extraktionsmethoden` den Eintrag `Maske`.
 
 
 ### Installation (macOS)
@@ -92,9 +99,12 @@ Dies ist eine Portierung des Plugins von Gatis Udrass, zu dem ich einige neue Fu
   **1.** Schließen Sie **xTool Studio**, falls es gerade läuft.<br />
   **2.** Öffnen Sie das **Terminal** und wenden Sie **`chmod +x`** auf die Datei `macos.command` an.<br />
   **3.** Doppelklicken Sie auf die Datei **`macos.command`**.<br />
-  **4.** Geben Sie **`1`** ein, um den Installer zu starten, und wählen Sie die gewünschte Sprache.<br />
-  **5.** Falls macOS den Schreibzugriff auf die App verweigert: `Systemeinstellungen` → `Datenschutz & Sicherheit` → `Voller Festplattenzugriff` → `Terminal` aktivieren, dann `Terminal` neu starten und es erneut versuchen.<br />
-  **6.** Öffnen Sie **xTool Studio**, fügen Sie ein Bild hinzu, öffnen Sie `Intelligente Maske` und wählen Sie unter `Extraktionsmethoden` den Eintrag `Maske`.
+  **4.** Geben Sie **`1`** ein, um den Installer zu starten:<br />
+         <p align="left"><img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/menu-macos.png" alt="macOS Menu" width="700" /></p>
+  **5.** Und wählen Sie die gewünschte Sprache:
+         <p align="left"><img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/installer-macos.png" alt="macOS Installer" width="700" /></p>  
+  **6.** Falls macOS den Schreibzugriff auf die App verweigert: `Systemeinstellungen` → `Datenschutz & Sicherheit` → `Voller Festplattenzugriff` → `Terminal` aktivieren, dann `Terminal` neu starten und es erneut versuchen.<br />
+  **7.** Öffnen Sie **xTool Studio**, fügen Sie ein Bild hinzu, öffnen Sie `Intelligente Maske` und wählen Sie unter `Extraktionsmethoden` den Eintrag `Maske`.
 
 > [!NOTE]
 > Nach der Ad-hoc-Neusignierung fragt macOS möglicherweise erneut nach Berechtigungen (Dateien, Schlüsselbund), und Sie müssen sich eventuell erneut anmelden. Automatische Updates von xTool Studio überschreiben das Plugin – führen Sie dann einfach den Installer erneut aus.
@@ -114,6 +124,12 @@ So entfernen Sie das Plugin und stellen jederzeit das unveränderte Original-Arc
   **1.** Schließen Sie **xTool Studio**.<br />
   **2.** Doppelklicken Sie unter Windows auf die Datei **`windows.bat`** bzw. unter macOS auf die Datei **`macos.command`**.<br />
   **3.** Geben Sie **`2`** ein, um die Deinstallation zu starten, und bestätigen Sie sie.
+  
+  **Windows:**
+  <p align="left"><img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/uninstaller-windows.png" alt="Windows Uninstaller" width="700" /></p>
+        
+  **macOS:**
+  <p align="left"><img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/uninstaller-macos.png" alt="macOS Uninstaller" width="700" /></p>
 
 > [!NOTE]
 > **Für macOS-Nutzer:** Um die Originalsignatur von xTool zurückzubekommen, installieren Sie die App neu.
@@ -124,6 +140,12 @@ So entfernen Sie das Plugin und stellen jederzeit das unveränderte Original-Arc
 
   **1.** Doppelklicken Sie unter **Windows** auf die Datei **`windows.bat`** bzw. unter **macOS** auf die Datei **`macos.command`**.<br />
   **2.** Geben Sie **`3`** ein, um die Statusprüfung zu starten.
+
+  **Windows:**
+  <p align="left"><img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/status-windows.png" alt="Windows Status" width="700" /></p>
+        
+  **macOS:**
+  <p align="left"><img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/status-macos.png" alt="macOS Status" width="700" /></p>
 
 <br />
 

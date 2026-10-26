@@ -149,6 +149,39 @@ Per rimuovere il plugin e ripristinare in qualsiasi momento l'archivio originale
 
 <br />
 
+## ⌨️ Scorciatoie da tastiera
+
+| Scorciatoia | Azione |
+|:--|:--|
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd> | **Indietro**: Annulla l'ultima modifica o l'ultimo *Applica* |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copia** la forma attiva |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Incolla** la forma copiata |
+| <kbd>Invio</kbd> | **Applica** |
+| <kbd>Esc</kbd> | **Annulla** |
+| <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Sposta la forma attiva di **1 mm** (0,05 in) |
+| <kbd>Maiusc</kbd> + <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Sposta la forma attiva di **5 mm** (0,25 in) |
+| <kbd>⌫</kbd> / <kbd>Canc</kbd> | *Poligono*: elimina l'ultimo punto · *Altre forme*: Elimina la forma attiva |
+
+> [!NOTE]
+> <kbd>Invio</kbd>, <kbd>Esc</kbd> e le frecce funzionano solo quando c'è almeno una forma in sospeso.
+> Le scorciatoie sono disattivate durante la digitazione in un campo (ad esempio il valore di un cursore).
+
+## 🖱️ Mouse
+
+| Gesto | Azione |
+|:--|:--|
+| **Trascina** | Disegna la forma |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + **Trascina** | Inverte la modalità di tracciamento: ⌖ Dal centro ↔ ⛶ Dall'angolo |
+| <kbd>Maiusc</kbd> + **Trascina** | Cerchio → Ellisse · Quadrato → Rettangolo · Anello → Anello libero |
+| <kbd>Maiusc</kbd> + **Rotazione** | Ruota a passi di **15°** |
+| **Clic** su una forma | La seleziona (diventa attiva) |
+| **Clic** su un punto *(poligono)* | Seleziona e sposta il punto |
+| <kbd>Alt</kbd> + **Clic** su un punto *(poligono)* | Elimina quel punto |
+| **Clic destro** *(poligono)* | Elimina il punto sotto il cursore, altrimenti l'ultimo punto |
+| **Clic** sui pulsanti della tela | Annulla · Indietro · Applica |
+
+<br />
+
 ## 💗 Ringraziamenti
 
 Un ringraziamento speciale a **Gatis Udrass** per il suo brillante plugin.

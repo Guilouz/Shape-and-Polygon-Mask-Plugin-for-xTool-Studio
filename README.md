@@ -12,7 +12,7 @@ This is a port of Gatis Udrass’s plugin, to which I have added a few new featu
 
 
 <p align="left">
-  <img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/plugin2.png?raw=true" alt="Plugin" />
+  <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin2.png" alt="Plugin" />
 </p>
 
 

@@ -35,8 +35,8 @@ Dies ist eine Portierung des Plugins von Gatis Udrass, zu dem ich einige neue Fu
   - **`✎ Freihand-Lasso`** → Zeichnen Sie eine Schleife aus freier Hand und positionieren Sie sie bei Bedarf neu.
 - Weiche Kante (0–25 mm): Macht die Maskenkanten sanft für weiche Übergänge bei Gravur und UV-/Tintendruck.
 - Zentrierte Form per Klick (`⊕ Zentrierte Form erstellen`): Platziert sofort eine zentrierte, anpassbare Form, die zu Ihrem Bild passt.
-- Vollständiges Rückgängig / Wiederholen (`Strg+Z` / `Strg+Y` unter Windows und `Cmd+Z` / `Cmd+Y` unter macOS) sowie Echtzeit-Synchronisierung von Original und Vorschau.
 - Maskenverwaltung: Maskendateien speichern, exportieren (.json, .png) oder importieren (.svg, .png, .jpg, .jpeg, .webp, .json).
+- Bearbeitbare Formen: Alle erstellten Formen bleiben so lange bearbeitbar, bis Sie auf `Anwenden` klicken; zudem lassen sie sich verwalten.
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png" alt="Plugin" />
 

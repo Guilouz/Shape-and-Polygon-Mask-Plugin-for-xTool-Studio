@@ -149,6 +149,39 @@ To remove the plugin and restore the original unpatched xTool Studio archive at 
 
 <br />
 
+## ⌨️ Keyboard Shortcuts
+
+| Shortcut | Action |
+|:--|:--|
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd> | **Undo**: Reverts the last edit or the last *Apply* |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copy** the active shape |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Paste** the copied shape |
+| <kbd>Enter</kbd> | **Apply** |
+| <kbd>Esc</kbd> | **Cancel** |
+| <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Move the active shape by **1 mm** (0.05 in) |
+| <kbd>Shift</kbd> + <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Move the active shape by **5 mm** (0.25 in) |
+| <kbd>⌫</kbd> / <kbd>Del</kbd> | *Polygon*: Remove the last point |
+
+> [!NOTE]
+> <kbd>Enter</kbd>, <kbd>Esc</kbd> and the arrow keys only work when at least one shape is pending.
+> Shortcuts are disabled while typing in an input field (a slider value, for example).
+
+## 🖱️ Mouse
+
+| Gesture | Action |
+|:--|:--|
+| **Drag** | Draw the shape |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + **Drag** | Toggle draw mode: ⌖ From Center ↔ ⛶ From Corner |
+| <kbd>Shift</kbd> + **Drag** | Circle → Ellipse · Square → Rectangle · Ring → Free ring |
+| <kbd>Shift</kbd> + **Rotate** | Rotate in **15°** steps |
+| **Click** a shape | Select it (it becomes active) |
+| **Click** a point *(polygon)* | Select and move the point |
+| <kbd>Alt</kbd> + **Click** a point *(polygon)* | Delete that point |
+| **Right-click** *(polygon)* | Delete the point under the cursor, otherwise the last point |
+| **Click** canvas buttons | Cancel · Undo · Apply |
+
+<br />
+
 ## 💗 Credits
 
 Special Thanks to **Gatis Udrass** for his brilliant plugin.

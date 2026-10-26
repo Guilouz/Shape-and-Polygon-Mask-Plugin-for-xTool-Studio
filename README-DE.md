@@ -149,6 +149,39 @@ So entfernen Sie das Plugin und stellen jederzeit das unveränderte Original-Arc
 
 <br />
 
+## ⌨️ Tastenkürzel
+
+| Kürzel | Aktion |
+|:--|:--|
+| <kbd>Strg</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd> | **Rückgängig**: Macht die letzte Änderung oder das letzte *Anwenden* rückgängig |
+| <kbd>Strg</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | Aktive Form **kopieren** |
+| <kbd>Strg</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | Kopierte Form **einfügen** |
+| <kbd>Eingabe</kbd> | **Anwenden** |
+| <kbd>Esc</kbd> | **Abbrechen** |
+| <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Aktive Form um **1 mm** (0,05 in) verschieben |
+| <kbd>Umschalt</kbd> + <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Aktive Form um **5 mm** (0,25 in) verschieben |
+| <kbd>⌫</kbd> / <kbd>Entf</kbd> | *Polygon*: Letzten Punkt entfernen |
+
+> [!NOTE]
+> <kbd>Eingabe</kbd>, <kbd>Esc</kbd> und die Pfeiltasten reagieren nur, wenn mindestens eine Form aussteht.
+> Die Kürzel sind deaktiviert, solange in ein Eingabefeld geschrieben wird (z. B. der Wert eines Schiebereglers).
+
+## 🖱️ Maus
+
+| Geste | Aktion |
+|:--|:--|
+| **Ziehen** | Form zeichnen |
+| <kbd>Strg</kbd> / <kbd>⌘</kbd> + **Ziehen** | Zeichenmodus umkehren: ⌖ Von der Mitte ↔ ⛶ Von der Ecke |
+| <kbd>Umschalt</kbd> + **Ziehen** | Kreis → Ellipse · Quadrat → Rechteck · Ring → Freier Ring |
+| <kbd>Umschalt</kbd> + **Drehen** | In **15°**-Schritten drehen |
+| **Klick** auf eine Form | Auswählen (sie wird aktiv) |
+| **Klick** auf einen Punkt *(Polygon)* | Punkt auswählen und verschieben |
+| <kbd>Alt</kbd> + **Klick** auf einen Punkt *(Polygon)* | Diesen Punkt löschen |
+| **Rechtsklick** *(Polygon)* | Punkt unter dem Cursor löschen, sonst den letzten Punkt |
+| **Klick** auf die Canvas-Schaltflächen | Abbrechen · Rückgängig · Anwenden |
+
+<br />
+
 ## 💗 Danksagung
 
 Besonderer Dank gilt **Gatis Udrass** für sein brillantes Plugin.

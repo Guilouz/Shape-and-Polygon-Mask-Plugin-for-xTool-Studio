@@ -63,3 +63,7 @@ This is a port of Gatis Udrass’s plugin, to which I have added a few new featu
 - Fixed an issue where the list of saved masks was not updated in real time.
 - Fixed elliptical function for Ring.
 - Improved UI.
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin.png" alt="Plugin" width="300" />
+</p>

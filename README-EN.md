@@ -27,13 +27,13 @@ This is a port of Gatis Udrass’s plugin, to which I have added a few new featu
 - 8 Built-in Shape Modes (via Dropdown Menu):
   - **`○ Circle`** → Perfect `1:1` circle (ideal for round coasters, coins, medallions, and ornaments).
   - **`⬭ Oval / Ellipse`** → Free-aspect oval / ellipse with 8 resize handles.
-  - **`▭ Rectangle`** → Free-aspect rectangle with adjustable `Corner Radius` (`0–200 px`).
-  - **`□ Square`** → Equal-side `1:1` square with adjustable `Corner Radius` (`0–200 px`).
+  - **`▭ Rectangle`** → Free-aspect rectangle with adjustable `Corner Radius` (`0–200 mm`).
+  - **`□ Square`** → Equal-side `1:1` square with adjustable `Corner Radius` (`0–200 m`).
   - **`⏢ 4-Point Quad`** → 4-corner quadrilateral where each of the 4 corners can be dragged independently to match angled or perspective objects.
   - **`⭔ Polygon by points`** → Click anywhere on the image to place points that immediately connect into a live closed shape. Drag any point to adjust, drag edge midpoints to insert new points, right-click a point to delete it, or drag the center `⊕` to move the whole polygon.
-  - **`◎ Ring`** → Circular/elliptical ring with adjustable `Ring Width` (`2–200 px`).
+  - **`◎ Ring`** → Circular/elliptical ring with adjustable `Ring Width` (`0.5-100 mm`).
   - **`✎ Freehand Lasso`** → Draw a freehand loop and reposition if needed.
-- Edge Feathering (`0–40 px`): Smoothly soften mask edges for engraving and UV/ink printing transitions.
+- Edge Feathering (`0–25 mm`): Smoothly soften mask edges for engraving and UV/ink printing transitions.
 - 1-Click Centered Shape (`⊕ Create Centered Shape`): Instantly places a centered, adjustable shape fitted to your image.
 - Full Undo / Redo (`Ctrl+Z` / `Ctrl+Y` on Windows and `Cmd+Z` / `Cmd+Y` on macOS) & real-time Origin / Preview synchronization.
 - Mask management: Save, export (.json, .png) or import (.svg, .png .jpg .jpeg .webp, .json) mask files.

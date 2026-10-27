@@ -8,7 +8,7 @@ Añade un conjunto completo de formas geométricas interactivas y una herramient
 
 Dibuja, centra, redimensiona, gira y perfecciona tus máscaras **al instante, sin esperar a la extracción por IA.**
 
-Este es un port del plugin de Gatis Udrass, al que he añadido algunas funciones nuevas y correcciones.
+Esta es una adaptación del plugin de Gatis Udrass, al que he añadido nuevas funcionalidades y correcciones.
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin2.png" alt="Plugin" />
 

@@ -62,7 +62,7 @@ Dies ist eine Portierung des Plugins von Gatis Udrass, die ich um neue Funktione
 
 ### Voraussetzungen
 
-- **xTool Studio v1.9.11** oder **Pre-Release v1.10.2**, installiert unter **Windows** oder **macOS**:
+- **xTool Studio** installiert unter **Windows** oder **macOS**:
    - Standardpfad unter **Windows**: `%LOCALAPPDATA%\Programs\xTool Studio`; auch Standardorte wie `Programs`, `Program Files` und `Program Files (x86)` werden unterstützt
    - Standardpfad unter **macOS**: `/Applications/xTool Studio.app`
    

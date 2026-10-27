@@ -64,6 +64,6 @@ This is a port of Gatis Udrass’s plugin, to which I have added new features an
 - Fixed elliptical function for Ring.
 - Improved UI.
 
-<p align="left">
+<p align="center">
   <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin.png" alt="Plugin" width="300" />
 </p>

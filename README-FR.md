@@ -62,7 +62,7 @@ Il s’agit d'un portage du plugin de Gatis Udrass, à laquelle j’ai ajouté d
 
 ### Prérequis
 
-- **xTool Studio v1.9.11** ou **Pre-Release v1.10.2** installé sous **Windows** ou sous **macOS** :
+- **xTool Studio** installé sous **Windows** ou sous **macOS** :
    - Emplacement par défaut sous **Windows** : `%LOCALAPPDATA%\Programs\xTool Studio` ; les emplacements standard tels que `Programs`, `Program Files` et `Program Files (x86)` sont également pris en charge
    - Emplacement par défaut sous **macOS** : `/Applications/xTool Studio.app`
    
@@ -190,6 +190,6 @@ Pour supprimer le plugin et restaurer à tout moment l'archive d'origine non mod
 
 Si mon travail vous plaît, n'hésitez pas à me soutenir en m'offrant une 🍺 ou un ☕. Merci beaucoup ! 🙂
 
-<a href="https://ko-fi.com/guilouz" target="_blank"><img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/ko-fi.png?raw=true" width="350"></a>
+<a href="https://ko-fi.com/guilouz" target="_blank"><img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/ko-fi.png?raw=true" width="350" target="_blank"></a>
 
 Un remerciement tout particulier à **Gatis Udrass** pour la base de son plugin.

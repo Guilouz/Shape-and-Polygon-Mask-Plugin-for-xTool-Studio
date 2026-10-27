@@ -6,7 +6,7 @@ import { execFileSync } from 'child_process';
 import readline from 'readline';
 import { fileURLToPath, pathToFileURL } from 'url';
 
-const plugin_version = "5.1.0"
+const plugin_version = "5.2.0"
 
 const IS_WIN = process.platform === 'win32';
 const IS_MAC = process.platform === 'darwin';

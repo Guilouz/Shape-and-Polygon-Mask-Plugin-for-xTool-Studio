@@ -10,49 +10,51 @@ Dibuja, centra, redimensiona, gira y perfecciona tus máscaras **al instante, si
 
 Esta es una adaptación del plugin de Gatis Udrass, al que he añadido nuevas funcionalidades y correcciones.
 
-<img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin2.png" alt="Plugin" />
+<img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin2.png">
 
 <br />
 
-## ✨ Características principales
+### ✨ Características principales
 
-- Enmascarado instantáneo (sin espera de IA): conserva (`Retain`) o borra (`Remove`) directamente zonas de la máscara de tu imagen con formas geométricas nítidas, polígonos personalizados o archivos de máscara importados.
-- Punto central interactivo (`⊕`) y tiradores de redimensionado/rotación:
-  - Tras dibujar cualquier forma, esta permanece en modo de ajuste interactivo antes de aplicarse.
+- Compatible con Windows y macOS.
+- Compatibilidad multilingüe: inglés, francés, alemán, español, italiano.
+- Instalador autónomo y portátil: descarga automáticamente el binario de **Node.js** necesario si aún no está presente en la carpeta `node`.
+- Enmascarado instantáneo (cero tiempo de espera de IA): conserva o borra directamente zonas de la máscara de tu imagen con formas geométricas nítidas, polígonos personalizados o archivos de máscara importados.
+- Punto central interactivo (`⊕`) y tiradores de tamaño / rotación:
+  - Tras dibujar cualquier forma, permanece en un modo de ajuste interactivo antes de aplicarse.
   - Arrastra el `punto central azul` (`⊕`) para alinear la forma con el centro exacto de tu objeto (con guías de alineación en cruz).
-  - Arrastra cualquier `tirador de borde o de esquina` para redimensionar sin perder el punto central.
+  - Arrastra cualquier `tirador de borde o esquina` para cambiar el tamaño sin perder el punto central.
   - Arrastra el `tirador de rotación` para girar sin perder el punto central.
-  - Ajusta la posición y el tamaño píxel a píxel con las `teclas de flecha` (`←`, `↑`, `↓`, `→`) o con los botones de desplazamiento del panel lateral.
+  - Ajusta con precisión la posición y el tamaño milímetro a milímetro (o en pulgadas) con las `teclas de flecha` (`←`, `↑`, `↓`, `→`), los botones de desplazamiento del panel lateral o valores escritos de ancho, alto y rotación.
   - Haz clic en **`✓ Aplicar`** (o pulsa `Intro`) cuando estés satisfecho, o en **`✕ Cancelar`** (`Esc`) para descartar.
-- 8 modos de forma integrados (mediante el menú desplegable):
+- 11 modos de forma integrados (mediante el menú desplegable):
   - **`○ Círculo`** → Círculo perfecto `1:1` (ideal para posavasos redondos, monedas, medallones y adornos).
-  - **`⬭ Óvalo / Elipse`** → Óvalo / elipse de proporción libre con 8 tiradores de redimensionado.
-  - **`▭ Rectángulo`** → Rectángulo de proporción libre con `Radio de esquina` ajustable (`0–200 mm`).
+  - **`⬭ Óvalo / Elipse`** → Óvalo / elipse de proporciones libres con 8 tiradores de tamaño.
+  - **`▭ Rectángulo`** → Rectángulo de proporciones libres con `Radio de esquina` ajustable (`0–200 mm`).
   - **`□ Cuadrado`** → Cuadrado `1:1` de lados iguales con `Radio de esquina` ajustable (`0–200 mm`).
-  - **`⏢ Cuadrilátero de 4 puntos`** → Cuadrilátero de 4 esquinas en el que cada una puede arrastrarse de forma independiente para adaptarse a objetos inclinados o en perspectiva.
-  - **`⭔ Polígono por puntos`** → Haz clic en cualquier lugar de la imagen para colocar puntos que se conectan de inmediato en una forma cerrada en vivo. Arrastra cualquier punto para ajustarlo, arrastra el punto medio de un borde para insertar nuevos puntos, haz clic derecho en un punto para eliminarlo o arrastra el centro `⊕` para mover todo el polígono.
-  - **`◎ Anillo`** → Anillo circular/elíptico con `Grosor del anillo` ajustable (`0.5-100 mm`).
-  - **`✎ Lazo a mano alzada`** → Dibuja un bucle a mano alzada y reposiciónalo si hace falta.
-- Suavizado de bordes (`0–25 mm`): Suaviza los bordes de la máscara para lograr transiciones fluidas en grabado e impresión UV/tinta.
-- Forma centrada con 1 clic (`⊕ Crear forma centrada`): Coloca al instante una forma centrada y ajustable adaptada a tu imagen.
-- Gestión de máscaras: Guarda, exporta (.json, .png) o importa (.svg, .png, .jpg, .jpeg, .webp, .json) archivos de máscara.
-- Formas editables: Todas las formas creadas permanecen editables hasta que se hace clic en `Aplicar`, y es posible gestionarlas.
+  - **`⏢ Cuadrilátero de 4 puntos`** → Cuadrilátero cuyas 4 esquinas se pueden arrastrar de forma independiente para ajustarse a objetos inclinados o en perspectiva.
+  - **`⬡ Polígono regular`** → Polígono regular con un número de lados ajustable (`3–24`, `6` por defecto), con el primer vértice arriba. Ajusta el valor `Lados` con los botones − / + o escribiéndolo; la forma se mantiene regular y uniforme, y cada uno de sus puntos se puede arrastrar para deformarla.
+  - **`⭔ Polígono por puntos`** → Haz clic en cualquier lugar de la imagen para colocar puntos que se unen al instante en una forma cerrada en vivo. Arrastra cualquier punto para ajustarlo, arrastra los puntos medios de los bordes para insertar nuevos puntos, haz clic derecho en un punto para eliminarlo o arrastra el centro `⊕` para mover todo el polígono.
+  - **`☆ Estrella`** → Estrella regular con un número de `Puntas` ajustable (`3–24`, `5` por defecto), con los puntos interiores al 45 % del radio exterior. Cambia el número con los botones − / + o escribiéndolo, y arrastra cualquier punto para remodelarla.
+  - **`♡ Corazón`** → Corazón clásico con dos lóbulos redondeados y una punta inferior definida, ajustado al recuadro que dibujes. Cambia su tamaño, gíralo, alinéalo y muévelo como cualquier otra forma.
+  - **`◎ Anillo`** → Anillo circular / elíptico con `Grosor del anillo` ajustable (`0,5-100 mm`).
+  - **`✎ Lazo a mano alzada`** → Dibuja un bucle a mano alzada y reposiciónalo si es necesario.
+- Suavizado de bordes (`0–25 mm`): suaviza los bordes de la máscara para transiciones de grabado e impresión UV / tinta.
+- Deshacer / Rehacer completo (`↶ Deshacer`, `↷ Rehacer`): botones del panel lateral y del lienzo, `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` o `Ctrl/Cmd+Mayús+Z`.
+- Varias formas a la vez: cada forma está numerada en la lista y se puede seleccionar con `Tab` / `Mayús+Tab`, copiar / pegar o eliminar.
+- Forma centrada con 1 clic (`⊕ Crear forma centrada`): coloca al instante una forma centrada y ajustable, adaptada a tu imagen.
+- Gestión de máscaras: guarda, exporta (.json, .png) o importa (.svg, .png, .jpg, .jpeg, .webp, .json) archivos de máscara.
+- Formas editables: todas las formas creadas siguen siendo editables hasta que haces clic en `Aplicar`, y se pueden gestionar.
+- Compatibilidad con atajos de teclado / ratón.
 
-<img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png" alt="Plugin" />
+<img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png">
 
 <br />
 
-## ✨ Novedades añadidas a la versión original
+### 🧩 Compatibilidad
 
-- Añadido soporte para macOS.
-- Añadido soporte para xTool Studio Pre-Release v1.10.2.
-- Instalador autónomo y portátil: ya no es necesario instalar **Node.js**; el instalador descarga automáticamente el binario necesario si no está ya presente en la carpeta `node`.
-- Soporte multilingüe: inglés, francés, alemán, español, italiano.
-- Soporte de rotación de máscaras: ahora es posible girar una máscara.
-- Soporte para importar archivos SVG: el SVG se ajusta a la imagen (90 % del tamaño, centrado, conservando la proporción) y se aplica al instante. También se añade a la biblioteca, igual que un PNG importado.
-- Corregido un problema por el que la lista de máscaras guardadas no se actualizaba en tiempo real.
-- Corregida la función elíptica del anillo.
-- Interfaz mejorada.
+- xTool Studio v1.9.11
+- xTool Studio Pre-Release v1.10.2
 
 <br />
 
@@ -157,6 +159,7 @@ Para eliminar el plugin y restaurar en cualquier momento el archivo original sin
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Rehacer**: restaura la última modificación |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copiar** la forma activa |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Pegar** la forma copiada |
+| <kbd>Tab</kbd> / <kbd>Mayús</kbd> + <kbd>Tab</kbd> | **Seleccionar** la forma siguiente / anterior | 
 | <kbd>Intro</kbd> | **Aplicar** |
 | <kbd>Esc</kbd> | **Cancelar** |
 | <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Mover la forma activa **1 mm** (0,05 in) |
@@ -185,19 +188,8 @@ Para eliminar el plugin y restaurar en cualquier momento el archivo original sin
 
 ## 💗 Créditos
 
-Un agradecimiento especial a **Gatis Udrass** por su brillante plugin.
-Puedes invitarle a un café con una donación:
+Si te gusta mi trabajo, no dudes en apoyarme con una 🍺 o un ☕. ¡Muchas gracias! 🙂
 
-<p align="left">
-  <img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/PayPal-QRCode-for-Gatis-Udrass.png?raw=true" alt="Donar mediante el código QR de PayPal" width="260" />
-</p>
+<a href="https://ko-fi.com/guilouz" target="_blank"><img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/ko-fi.png?raw=true" width="350"></a>
 
-Y también puedes darme las gracias a mí (**Cyril Guislain**) si te gustan los cambios realizados:
-
-<p align="left">
-  <img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/PayPal-QRCode-for-Cyril-Guislain.png?raw=true" alt="Donar mediante el código QR de PayPal" width="260" />
-</p>
-
-<p align="left">
-  <em>Escanea el código QR de PayPal de arriba con la cámara de tu teléfono o con la aplicación de PayPal para hacer una donación. ¡Gracias por tu apoyo!</em>
-</p>
+Un agradecimiento especial a **Gatis Udrass** por la base de su plugin.

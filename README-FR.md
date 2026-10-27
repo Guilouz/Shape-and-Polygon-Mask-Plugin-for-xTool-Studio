@@ -10,49 +10,51 @@ Dessinez, centrez, redimensionnez, faites pivoter et affinez vos masques **insta
 
 Il s’agit d'un portage du plugin de Gatis Udrass, à laquelle j’ai ajouté de nouvelles fonctionnalités et des correctifs.
 
-<img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin2.png" alt="Plugin" />
+<img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin2.png">
 
 <br />
 
-## ✨ Fonctionnalités principales
+### ✨ Fonctionnalités principales
 
-- Masquage instantané (zéro attente IA) : Conservez ou supprimez directement des zones du masque de votre image avec des formes géométriques nettes, des polygones personnalisés ou des fichiers de masque importés.
-- Point central interactif (`⊕`) et poignées de redimensionnement/rotation :
-  - Après avoir dessiné une forme, celle-ci reste en mode d'ajustement interactif avant d'être appliquée.
-  - Faites glisser le `point central bleu` (`⊕`) pour l'aligner exactement sur le centre de votre objet (avec des repères d'alignement en croix).
-  - Faites glisser n'importe quelle `poignée de bord ou de coin` pour redimensionner sans perdre votre point central.
-  - Faites glisser la `poignée de rotation` pour faire pivoter la forme sans perdre votre point central.
-  - Affinez la position et la taille pixel par pixel avec les `touches fléchées` (`←`, `↑`, `↓`, `→`) ou les boutons de déplacement du panneau latéral.
-  - Cliquez sur **`✓ Appliquer`** (ou appuyez sur `Entrée`) lorsque vous êtes satisfait, ou sur **`✕ Annuler`** (`Échap`) pour tout abandonner.
-- 8 modes de forme intégrés (via le menu déroulant) :
+- Compatible Windows et macOS.
+- Interface multilingue : anglais, français, allemand, espagnol, italien.
+- Installateur autonome et portable : télécharge automatiquement le binaire de **Node.js** nécessaire s'il n'est pas déjà présent dans le dossier `node`.
+- Masquage instantané (zéro temps d'attente IA) : conservez ou effacez directement des zones du masque de votre image avec des formes géométriques nettes, des polygones personnalisés ou des fichiers de masque importés.
+- Point central interactif (`⊕`) et poignées de redimensionnement / rotation :
+  - Après avoir dessiné une forme, elle reste en mode d'ajustement interactif avant d'être appliquée.
+  - Faites glisser le `point central bleu` (`⊕`) pour aligner la forme sur le centre exact de votre objet (avec des guides d'alignement en croix).
+  - Faites glisser une `poignée de bord ou de coin` pour redimensionner sans perdre votre point central.
+  - Faites glisser la `poignée de rotation` pour pivoter sans perdre votre point central.
+  - Ajustez finement la position et la taille au mm près (ou en pouces) avec les `touches fléchées` (`←`, `↑`, `↓`, `→`), les boutons de déplacement du panneau latéral, ou des valeurs saisies pour la largeur, la hauteur et la rotation.
+  - Cliquez sur **`✓ Appliquer`** (ou appuyez sur `Entrée`) une fois satisfait, ou sur **`✕ Annuler`** (`Échap`) pour abandonner.
+- 11 modes de forme intégrés (via le menu déroulant) :
   - **`○ Cercle`** → Cercle parfait `1:1` (idéal pour les dessous de verre ronds, pièces, médaillons et ornements).
   - **`⬭ Ovale / Ellipse`** → Ovale / ellipse à proportions libres avec 8 poignées de redimensionnement.
   - **`▭ Rectangle`** → Rectangle à proportions libres avec `Rayon des coins` réglable (`0–200 mm`).
-  - **`□ Carré`** → Carré `1:1` à côtés égaux avec `Rayon des coins` réglable (`0–200 m`).
-  - **`⏢ Quadrilatère 4 points`** → Quadrilatère à 4 coins, chacun pouvant être déplacé indépendamment pour s'adapter aux objets en angle ou en perspective.
-  - **`⭔ Polygone par points`** → Cliquez n'importe où sur l'image pour placer des points qui se relient immédiatement en une forme fermée en direct. Faites glisser un point pour l'ajuster, faites glisser le milieu d'un bord pour insérer de nouveaux points, faites un clic droit sur un point pour le supprimer, ou faites glisser le centre `⊕` pour déplacer tout le polygone.
-  - **`◎ Anneau`** → Anneau circulaire/elliptique avec `Épaisseur de l'anneau` réglable (`0.5-100 mm`).
-  - **`✎ Lasso à main levée`** → Dessinez une boucle à main levée et repositionnez-la si nécessaire.
-- Adoucissement des bords (0–25 mm) : Adoucit les bords du masque pour des transitions fluides en gravure et en impression UV/encre.
-- Forme centrée en 1 clic (`⊕ Créer une forme centrée`) : Place instantanément une forme centrée et ajustable, adaptée à votre image.
-- Gestion des masques : Enregistrez, exportez (.json, .png) ou importez (.svg, .png, .jpg, .jpeg, .webp, .json) des fichiers de masque.
-- Formes modifiables : Toutes les formes créées restent modifiables jusqu’à ce que vous cliquiez sur `Appliquer` ; elles peuvent par ailleurs être gérées.
+  - **`□ Carré`** → Carré `1:1` à côtés égaux avec `Rayon des coins` réglable (`0–200 mm`).
+  - **`⏢ Quadrilatère 4 points`** → Quadrilatère dont chacun des 4 coins se déplace indépendamment, pour épouser des objets inclinés ou en perspective.
+  - **`⬡ Polygone régulier`** → Polygone régulier avec un nombre de côtés réglable (`3–24`, `6` par défaut), premier sommet en haut. Réglez la valeur `Côtés` avec les boutons − / + ou en la saisissant ; la forme reste régulière et uniforme, et chacun de ses points peut toujours être déplacé pour la déformer.
+  - **`⭔ Polygone par points`** → Cliquez n'importe où sur l'image pour placer des points qui se relient aussitôt en une forme fermée en direct. Faites glisser un point pour l'ajuster, glissez le milieu d'une arête pour insérer de nouveaux points, faites un clic droit sur un point pour le supprimer, ou glissez le centre `⊕` pour déplacer tout le polygone.
+  - **`☆ Étoile`** → Étoile régulière avec un nombre de `Branches` réglable (`3–24`, `5` par défaut), les points intérieurs étant placés à 45 % du rayon extérieur. Changez le nombre avec les boutons − / + ou en le saisissant, et faites glisser un point pour remodeler la forme.
+  - **`♡ Cœur`** → Cœur classique à deux lobes arrondis et pointe basse nette, ajusté à la zone que vous tracez. Redimensionnez, pivotez, alignez et déplacez-le comme n'importe quelle autre forme.
+  - **`◎ Anneau`** → Anneau circulaire / elliptique avec `Épaisseur de l'anneau` réglable (`0,5-100 mm`).
+  - **`✎ Lasso à main levée`** → Dessinez une boucle à main levée et repositionnez-la si besoin.
+- Adoucissement des bords (`0–25 mm`) : adoucit les bords du masque pour des transitions soignées en gravure et en impression UV / encre.
+- Annuler / Rétablir complets (`↶ Retour`, `↷ Rétablir`) : boutons du panneau latéral et du canevas, `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` ou `Ctrl/Cmd+Maj+Z`.
+- Plusieurs formes à la fois : chaque forme est numérotée dans la liste, peut être sélectionnée avec `Tab` / `Maj+Tab`, copiée / collée ou supprimée.
+- Forme centrée en 1 clic (`⊕ Créer une forme centrée`) : place instantanément une forme centrée et ajustable, adaptée à votre image.
+- Gestion des masques : enregistrez, exportez (.json, .png) ou importez (.svg, .png, .jpg, .jpeg, .webp, .json) des fichiers de masque.
+- Formes modifiables : toutes les formes créées restent modifiables jusqu'à ce que vous cliquiez sur `Appliquer`, et elles peuvent être gérées.
+- Prise en charge des raccourcis clavier / souris.
 
-<img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png" alt="Plugin" />
+<img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png">
 
 <br />
 
-## ✨ Nouvelles fonctionnalités ajoutées à la version d'origine
+### 🧩 Compatibilité
 
-- Ajout de la prise en charge de macOS.
-- Ajout de la prise en charge de xTool Studio Pre-Release v1.10.2.
-- Installateur autonome et portable : il n'est plus nécessaire d'installer **Node.js**, l'installateur télécharge automatiquement le binaire requis s'il n'est pas déjà présent dans le dossier `node`.
-- Prise en charge multilingue : anglais, français, allemand, espagnol, italien.
-- Prise en charge de la rotation du masque : il est désormais possible de faire pivoter un masque.
-- Prise en charge de l'import de fichiers SVG : le SVG est ajusté à l'image (90 % de la taille, centré, proportions conservées) et appliqué instantanément. Il est aussi ajouté à la bibliothèque, comme un PNG importé.
-- Correction de la liste des masques enregistrés qui n'était pas mise à jour en temps réel.
-- Correction de la fonction elliptique pour l'anneau.
-- Interface améliorée.
+- xTool Studio v1.9.11
+- xTool Studio Pre-Release v1.10.2
 
 <br />
 
@@ -157,6 +159,7 @@ Pour supprimer le plugin et restaurer à tout moment l'archive d'origine non mod
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Rétablir** : Restaure la dernière modification |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copier** la forme active |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Coller** la forme copiée |
+| <kbd>Tab</kbd> / <kbd>Maj</kbd> + <kbd>Tab</kbd> | **Sélectionner** la forme suivante / précédente | 
 | <kbd>Entrée</kbd> | **Appliquer** |
 | <kbd>Échap</kbd> | **Annuler** |
 | <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> | Déplacer la forme active de **1 mm** (0,05 in) |
@@ -185,19 +188,8 @@ Pour supprimer le plugin et restaurer à tout moment l'archive d'origine non mod
 
 ## 💗 Crédits
 
-Un grand merci à **Gatis Udrass** pour son brillant plugin.
-Vous pouvez lui offrir un café par un don :
+Si mon travail vous plaît, n'hésitez pas à me soutenir en m'offrant une 🍺 ou un ☕. Merci beaucoup ! 🙂
 
-<p align="left">
-  <img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/PayPal-QRCode-for-Gatis-Udrass.png?raw=true" alt="Faire un don via le QR code PayPal" width="260" />
-</p>
+<a href="https://ko-fi.com/guilouz" target="_blank"><img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/ko-fi.png?raw=true" width="350"></a>
 
-Et vous pouvez aussi me remercier (**Cyril Guislain**) si vous appréciez les modifications apportées :
-
-<p align="left">
-  <img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/PayPal-QRCode-for-Cyril-Guislain.png?raw=true" alt="Faire un don via le QR code PayPal" width="260" />
-</p>
-
-<p align="left">
-  <em>Scannez le QR code PayPal ci-dessus avec l'appareil photo de votre téléphone ou l'application PayPal pour faire un don. Merci pour votre soutien !</em>
-</p>
+Un remerciement tout particulier à **Gatis Udrass** pour la base de son plugin.

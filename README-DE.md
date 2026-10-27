@@ -190,6 +190,6 @@ So entfernen Sie das Plugin und stellen jederzeit das unveränderte Original-Arc
 
 Wenn dir meine Arbeit gefällt, unterstütze mich gerne mit einem 🍺 oder einem ☕. Vielen Dank! 🙂
 
-<a href="https://ko-fi.com/guilouz" target="_blank"><img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/ko-fi.png?raw=true" width="350"></a>
+<a href="https://ko-fi.com/guilouz" target="_blank"><img src="https://github.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/blob/main/images/ko-fi.png?raw=true" width="350" target="_blank"></a>
 
 Ein besonderer Dank geht an **Gatis Udrass** für die Grundlage seines Plugins.

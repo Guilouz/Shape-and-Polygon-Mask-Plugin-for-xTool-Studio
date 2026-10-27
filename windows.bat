@@ -45,7 +45,7 @@ if not exist "%~dp0node\node.exe" (
   if exist "tmp" rmdir /s /q "tmp"
 
   echo.
-  echo ✅ Node.js successfully downloaded!
+  echo ✅ Node.js successfully downloaded! Starting the installer..
   timeout /t 2 >nul
 )
 

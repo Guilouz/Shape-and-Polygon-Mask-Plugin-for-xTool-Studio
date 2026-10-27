@@ -51,7 +51,7 @@ if [ ! -f "./node/node" ]; then
       chmod +x "./node/node"
       rm -rf "./tmp"
       echo
-      echo "✅ Node.js successfully downloaded!"
+      echo "✅ Node.js successfully downloaded! Starting the installer.."
       sleep 2
     fi
   else

@@ -16,37 +16,50 @@ This is a port of Gatis Udrass’s plugin, to which I have added a few new featu
 
 ### ✨ Key Features
 
-- Windows and macOS support.
-- Multi-language support: English, French, German, Spanish, Italian.
-- Standalone and Portable installer: Automatically downloads the needed binary of **Node.js** if it is not already present in the `node` folder.
-- Instant Masking (Zero AI Wait Time): Directly retain or erase areas of your image mask with crisp geometric shapes, custom polygons or imported mask files.
-- Interactive Center Point (`⊕`) & Resize/Rotate Handles:
-  - After drawing any shape, it stays in an interactive adjustment mode before being applied.
-  - Drag the `blue center point` (`⊕`) to align the shape with the exact center of your object (with crosshair alignment guides).
-  - Drag any `edge or corner handle` to resize without losing your center point.
-  - Drag the `rotation handle` to rotate without losing your center point. 
-  - Fine-tune position and size mm-by-mm (or in) using `Arrow keys` (`←`, `↑`, `↓`, `→`) or the side-panel nudge buttons.
-  - Click **`✓ Apply`** (or press `Enter`) when satisfied, or **`✕ Cancel`** (`Esc`) to discard.
-- 11 Built-in Shape Modes (via Dropdown Menu):
-  - **`○ Circle`** → Perfect `1:1` circle (ideal for round coasters, coins, medallions, and ornaments).
-  - **`⬭ Oval / Ellipse`** → Free-aspect oval / ellipse with 8 resize handles.
-  - **`▭ Rectangle`** → Free-aspect rectangle with adjustable `Corner Radius` (`0–200 mm`).
-  - **`□ Square`** → Equal-side `1:1` square with adjustable `Corner Radius` (`0–200 mm`).
-  - **`⏢ 4-Point Quad`** → 4-corner quadrilateral where each of the 4 corners can be dragged independently to match angled or perspective objects.
-  - **`⬡ Regular Polygon`** → Regular polygon with an adjustable number of sides (`3–24`, default `6`), first vertex at the top. Set the `Sides` value with the − / + buttons or by typing it; the shape stays regular and uniform, and each of its points can still be dragged to deform it.
-  - **`⭔ Polygon by Points`** → Click anywhere on the image to place points that immediately connect into a live closed shape. Drag any point to adjust, drag edge midpoints to insert new points, right-click a point to delete it, or drag the center `⊕` to move the whole polygon.
-  - **`☆ Star`** → Regular star with an adjustable number of `Branches` (`3–24`, default `5`), with the inner points set at 45 % of the outer radius. Change the count with the − / + buttons or by typing it, and drag any point to reshape it.
-  - **`♡ Heart`** → Classic heart shape with two round lobes and a sharp bottom tip, fitted to the box you draw. Resize, rotate, align and move it like any other shape.
-  - **`◎ Ring`** → Circular/elliptical ring with adjustable `Ring Width` (`0.5-100 mm`).
-  - **`✎ Freehand Lasso`** → Draw a freehand loop and reposition if needed.
-- Edge Feathering (`0–25 mm`): Smoothly soften mask edges for engraving and UV/ink printing transitions.
-- Fine-tune position and size mm-by-mm (or in) using `Arrow keys` (`←`, `↑`, `↓`, `→`, `Shift`), the side-panel nudge buttons, or exact typed values for width, height and rotation.
-- Full Undo / Redo (`↶ Undo`, `↷ Redo`): side-panel and canvas buttons, `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` or `Ctrl/Cmd+Shift+Z`.
-- Multiple shapes at once: each shape is numbered in the list, can be selected with `Tab` / `Shift+Tab`, copied / pasted, or deleted.
-- 1-Click Centered Shape (`⊕ Create Centered Shape`): Instantly places a centered, adjustable shape fitted to your image.
-- Mask management: Save, export (.json, .png) or import (.svg, .png .jpg .jpeg .webp, .json) mask files.
-- Editable Shapes: All created shapes stay editable until you click `Apply` and they can be managed.
-- Keyboard/Mouse shortcuts support.
+**General**
+- **Windows** and **macOS** support.
+- Multi-language interface: English, French, German, Spanish, Italian.
+- Standalone and Portable installer: Automatically downloads the required **Node.js** binary into the `node` folder if it is not already present.
+
+**Instant Masking**
+- Retain or erase areas of an image mask instantly with geometric shapes, custom polygons, freehand loops or imported mask files — no AI processing involved.
+- **Live preview**: Click `Preview` button to see the image as it will look before applying (removed areas are shown as a checkerboard).
+- Click `✓ Apply` (or press `Enter`) when satisfied, or `✕ Cancel` (`Esc`) to discard.
+
+**Shapes**
+
+| Shape | Description |
+|---|---|
+| ○ Circle | Perfect `1:1` circle. |
+| ⬭ Oval / Ellipse | Free-aspect oval  / ellipse with 8 resize handles. |
+| ▭ Rectangle | Free-aspect rectangle with `Corner Radius`. |
+| □ Square | Equal-side square with `Corner Radius`. |
+| ⏢ 4-Point Quad | Four independent corners, ideal for angled or perspective objects; supports `Corner Radius`. |
+| ⬡ Regular Polygon | `3–24` sides (default `6`); every point can still be dragged to deform it; supports `Corner Radius`. |
+| ⭔ Polygon by Points | Click to place points; drag points, drag edge midpoints to insert new ones, right-click a point to delete it. |
+| ☆ Star | `3–24` branches (default `5`) with an adjustable `Inner ratio` (`10–90 %`, default `45 %`); supports `Corner Radius`. |
+| ♡ Heart | Two round lobes and a sharp tip, with a 4-corner resize box. |
+| ◎ Ring | Circular / Elliptical ring with adjustable `Ring Width` (`0.5–100 mm`). |
+| ✎ Freehand Lasso | Draw a freehand loop, then reposition it. |
+
+- Corner Radius: `0–200 mm`.
+- Edge Feather: `0–25 mm` (soft edges for engraving and UV / ink printing transitions).
+
+**Interactive Editing**
+- Every new shape stays in an adjustment mode until you apply it.
+- Drag the blue center point `⊕` to align the shape with the exact center of your object.
+- Drag any edge or corner handle to resize, or the rotation handle to rotate, without losing the center point.
+- Fine-tune position and size in mm or inches with `Arrow keys` (`Shift` for larger steps), the nudge buttons, or exact typed values for width, height and rotation.
+- `⊕ Create Centered Shape`: Instantly places an adjustable shape fitted to your image.
+- Full `↶ Undo` / `↷ Redo`: Side-panel and canvas buttons, `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` or `Ctrl/Cmd+Shift+Z`.
+
+**Multiple Shapes**
+- Combine several shapes in one operation: They are numbered in the **Editable Shapes** list and stay editable until you click `Apply`.
+- Select with `Tab` / `Shift+Tab` or by clicking, `Duplicate` (`Ctrl/Cmd+D`), `Delete`, and `Hide` / `Lock` any shape.
+
+**Mask Management**
+- Save masks, including multi-shape masks that restore every shape (type, rotation, radius, feathering…) ready to edit.
+- Export (`.json`, `.png`) or import (`.svg`, `.png`, `.jpg`, `.jpeg`, `.webp`, `.json`).
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png">
 
@@ -160,6 +173,7 @@ To remove the plugin and restore the original unpatched xTool Studio archive at 
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Redo**: Restore the last edit |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copy** the active shape |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Paste** the copied shape |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>D</kbd> | **Duplicate** the active shape |
 | <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | **Select** the next / previous shape | 
 | <kbd>Enter</kbd> | **Apply** |
 | <kbd>Esc</kbd> | **Cancel** |

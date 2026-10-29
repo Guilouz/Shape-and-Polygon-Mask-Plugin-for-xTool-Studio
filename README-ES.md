@@ -16,36 +16,50 @@ Esta es una adaptación del plugin de Gatis Udrass, al que he añadido nuevas fu
 
 ### ✨ Características principales
 
-- Compatible con Windows y macOS.
-- Compatibilidad multilingüe: inglés, francés, alemán, español, italiano.
-- Instalador autónomo y portátil: descarga automáticamente el binario de **Node.js** necesario si aún no está presente en la carpeta `node`.
-- Enmascarado instantáneo (cero tiempo de espera de IA): conserva o borra directamente zonas de la máscara de tu imagen con formas geométricas nítidas, polígonos personalizados o archivos de máscara importados.
-- Punto central interactivo (`⊕`) y tiradores de tamaño / rotación:
-  - Tras dibujar cualquier forma, permanece en un modo de ajuste interactivo antes de aplicarse.
-  - Arrastra el `punto central azul` (`⊕`) para alinear la forma con el centro exacto de tu objeto (con guías de alineación en cruz).
-  - Arrastra cualquier `tirador de borde o esquina` para cambiar el tamaño sin perder el punto central.
-  - Arrastra el `tirador de rotación` para girar sin perder el punto central.
-  - Ajusta con precisión la posición y el tamaño milímetro a milímetro (o en pulgadas) con las `teclas de flecha` (`←`, `↑`, `↓`, `→`), los botones de desplazamiento del panel lateral o valores escritos de ancho, alto y rotación.
-  - Haz clic en **`✓ Aplicar`** (o pulsa `Intro`) cuando estés satisfecho, o en **`✕ Cancelar`** (`Esc`) para descartar.
-- 11 modos de forma integrados (mediante el menú desplegable):
-  - **`○ Círculo`** → Círculo perfecto `1:1` (ideal para posavasos redondos, monedas, medallones y adornos).
-  - **`⬭ Óvalo / Elipse`** → Óvalo / elipse de proporciones libres con 8 tiradores de tamaño.
-  - **`▭ Rectángulo`** → Rectángulo de proporciones libres con `Radio de esquina` ajustable (`0–200 mm`).
-  - **`□ Cuadrado`** → Cuadrado `1:1` de lados iguales con `Radio de esquina` ajustable (`0–200 mm`).
-  - **`⏢ Cuadrilátero de 4 puntos`** → Cuadrilátero cuyas 4 esquinas se pueden arrastrar de forma independiente para ajustarse a objetos inclinados o en perspectiva.
-  - **`⬡ Polígono regular`** → Polígono regular con un número de lados ajustable (`3–24`, `6` por defecto), con el primer vértice arriba. Ajusta el valor `Lados` con los botones − / + o escribiéndolo; la forma se mantiene regular y uniforme, y cada uno de sus puntos se puede arrastrar para deformarla.
-  - **`⭔ Polígono por puntos`** → Haz clic en cualquier lugar de la imagen para colocar puntos que se unen al instante en una forma cerrada en vivo. Arrastra cualquier punto para ajustarlo, arrastra los puntos medios de los bordes para insertar nuevos puntos, haz clic derecho en un punto para eliminarlo o arrastra el centro `⊕` para mover todo el polígono.
-  - **`☆ Estrella`** → Estrella regular con un número de `Puntas` ajustable (`3–24`, `5` por defecto), con los puntos interiores al 45 % del radio exterior. Cambia el número con los botones − / + o escribiéndolo, y arrastra cualquier punto para remodelarla.
-  - **`♡ Corazón`** → Corazón clásico con dos lóbulos redondeados y una punta inferior definida, ajustado al recuadro que dibujes. Cambia su tamaño, gíralo, alinéalo y muévelo como cualquier otra forma.
-  - **`◎ Anillo`** → Anillo circular / elíptico con `Grosor del anillo` ajustable (`0,5-100 mm`).
-  - **`✎ Lazo a mano alzada`** → Dibuja un bucle a mano alzada y reposiciónalo si es necesario.
-- Suavizado de bordes (`0–25 mm`): suaviza los bordes de la máscara para transiciones de grabado e impresión UV / tinta.
-- Deshacer / Rehacer completo (`↶ Deshacer`, `↷ Rehacer`): botones del panel lateral y del lienzo, `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` o `Ctrl/Cmd+Mayús+Z`.
-- Varias formas a la vez: cada forma está numerada en la lista y se puede seleccionar con `Tab` / `Mayús+Tab`, copiar / pegar o eliminar.
-- Forma centrada con 1 clic (`⊕ Crear forma centrada`): coloca al instante una forma centrada y ajustable, adaptada a tu imagen.
-- Gestión de máscaras: guarda, exporta (.json, .png) o importa (.svg, .png, .jpg, .jpeg, .webp, .json) archivos de máscara.
-- Formas editables: todas las formas creadas siguen siendo editables hasta que haces clic en `Aplicar`, y se pueden gestionar.
-- Compatibilidad con atajos de teclado / ratón.
+**General**
+- Compatible con **Windows** y **macOS**.
+- Interfaz multilingüe: inglés, francés, alemán, español, italiano.
+- Instalador independiente y portátil: descarga automáticamente el binario de **Node.js** necesario en la carpeta `node` si aún no está presente.
+
+**Enmascarado instantáneo**
+- Conserva o borra áreas de la máscara de una imagen al instante con formas geométricas, polígonos personalizados, trazos a mano alzada o archivos de máscara importados — sin ningún procesamiento de IA.
+- **Vista previa en directo**: haz clic en el botón `Vista previa` para ver la imagen tal y como quedará antes de aplicar (las zonas eliminadas se muestran como un tablero de ajedrez).
+- Haz clic en `✓ Aplicar` (o pulsa `Enter`) cuando estés conforme, o en `✕ Cancelar` (`Esc`) para descartar.
+
+**Formas**
+
+| Forma | Descripción |
+|---|---|
+| ○ Círculo | Círculo perfecto `1:1`. |
+| ⬭ Óvalo / Elipse | Óvalo / elipse de proporción libre con 8 tiradores de redimensionado. |
+| ▭ Rectángulo | Rectángulo de proporción libre con `Radio de esquina`. |
+| □ Cuadrado | Cuadrado de lados iguales con `Radio de esquina`. |
+| ⏢ Cuadrilátero de 4 puntos | Cuatro esquinas independientes, ideal para objetos en ángulo o en perspectiva; admite `Radio de esquina`. |
+| ⬡ Polígono regular | `3–24` lados (por defecto `6`); cada punto se puede arrastrar para deformarlo; admite `Radio de esquina`. |
+| ⭔ Polígono por puntos | Haz clic para colocar puntos; arrastra los puntos, arrastra el punto medio de un lado para insertar nuevos puntos y haz clic derecho en un punto para eliminarlo. |
+| ☆ Estrella | `3–24` puntas (por defecto `5`) con una `Proporción interior` ajustable (`10–90 %`, por defecto `45 %`); admite `Radio de esquina`. |
+| ♡ Corazón | Dos lóbulos redondeados y una punta afilada, con un cuadro de redimensionado de 4 esquinas. |
+| ◎ Anillo | Anillo circular / elíptico con `Grosor del anillo` ajustable (`0.5–100 mm`). |
+| ✎ Lazo a mano alzada | Dibuja un lazo a mano alzada y reposiciónalo si es necesario. |
+
+- Radio de esquina: `0–200 mm`.
+- Suavizado de bordes: `0–25 mm` (bordes suavizados para las transiciones de grabado e impresión UV / tinta).
+
+**Edición interactiva**
+- Cada forma nueva permanece en modo de ajuste hasta que la apliques.
+- Arrastra el punto central azul `⊕` para alinear la forma con el centro exacto de tu objeto.
+- Arrastra cualquier tirador de borde o esquina para redimensionar, o el tirador de rotación para girar, sin perder el punto central.
+- Ajusta con precisión la posición y el tamaño en mm o pulgadas con las `Teclas de flecha` (`Shift` para pasos mayores), los botones de desplazamiento o introduciendo valores exactos de ancho, alto y rotación.
+- `⊕ Crear forma centrada`: coloca al instante una forma ajustable adaptada a tu imagen.
+- `↶ Deshacer` / `↷ Rehacer` completos: botones del panel lateral y del lienzo, `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` o `Ctrl/Cmd+Shift+Z`.
+
+**Formas múltiples**
+- Combina varias formas en una sola operación: se numeran en la lista **Formas editables** y siguen siendo editables hasta que hagas clic en `Aplicar`.
+- Selecciona con `Tab` / `Shift+Tab` o haciendo clic, `Duplicar` (`Ctrl/Cmd+D`), `Eliminar`, y `Ocultar` / `Bloquear` cualquier forma.
+
+**Gestión de máscaras**
+- Guarda máscaras, incluidas las de varias formas, que restauran cada forma (tipo, rotación, radio, suavizado…) lista para editar.
+- Exporta (`.json`, `.png`) o importa (`.svg`, `.png`, `.jpg`, `.jpeg`, `.webp`, `.json`).
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png">
 
@@ -159,6 +173,7 @@ Para eliminar el plugin y restaurar en cualquier momento el archivo original sin
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Rehacer**: restaura la última modificación |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copiar** la forma activa |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Pegar** la forma copiada |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>D</kbd> | **Duplicar** la forma activa |
 | <kbd>Tab</kbd> / <kbd>Mayús</kbd> + <kbd>Tab</kbd> | **Seleccionar** la forma siguiente / anterior | 
 | <kbd>Intro</kbd> | **Aplicar** |
 | <kbd>Esc</kbd> | **Cancelar** |

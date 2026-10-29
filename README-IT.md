@@ -16,36 +16,50 @@ Si tratta di un port del plugin di Gatis Udrass, al quale ho aggiunto nuove funz
 
 ### ✨ Funzionalità principali
 
-- Supporto per Windows e macOS.
-- Supporto multilingua: inglese, francese, tedesco, spagnolo, italiano.
-- Installer autonomo e portatile: scarica automaticamente il binario di **Node.js** necessario se non è già presente nella cartella `node`.
-- Mascheratura istantanea (zero tempi di attesa dell'IA): mantieni o cancella direttamente aree della maschera della tua immagine con forme geometriche nitide, poligoni personalizzati o file di maschera importati.
-- Punto centrale interattivo (`⊕`) e maniglie di ridimensionamento / rotazione:
-  - Dopo aver disegnato una forma, questa resta in modalità di regolazione interattiva prima di essere applicata.
-  - Trascina il `punto centrale blu` (`⊕`) per allineare la forma al centro esatto del tuo oggetto (con guide di allineamento a croce).
-  - Trascina una qualsiasi `maniglia di bordo o d'angolo` per ridimensionare senza perdere il punto centrale.
-  - Trascina la `maniglia di rotazione` per ruotare senza perdere il punto centrale.
-  - Regola con precisione posizione e dimensioni al millimetro (o in pollici) con i `tasti freccia` (`←`, `↑`, `↓`, `→`), i pulsanti di spostamento del pannello laterale o valori digitati per larghezza, altezza e rotazione.
-  - Fai clic su **`✓ Applica`** (o premi `Invio`) quando sei soddisfatto, oppure su **`✕ Annulla`** (`Esc`) per scartare.
-- 11 modalità di forma integrate (tramite menu a discesa):
-  - **`○ Cerchio`** → Cerchio perfetto `1:1` (ideale per sottobicchieri rotondi, monete, medaglioni e ornamenti).
-  - **`⬭ Ovale / Ellisse`** → Ovale / ellisse a proporzioni libere con 8 maniglie di ridimensionamento.
-  - **`▭ Rettangolo`** → Rettangolo a proporzioni libere con `Raggio angoli` regolabile (`0–200 mm`).
-  - **`□ Quadrato`** → Quadrato `1:1` a lati uguali con `Raggio angoli` regolabile (`0–200 mm`).
-  - **`⏢ Quadrilatero a 4 punti`** → Quadrilatero in cui ciascuno dei 4 angoli può essere trascinato in modo indipendente per adattarsi a oggetti inclinati o in prospettiva.
-  - **`⬡ Poligono regolare`** → Poligono regolare con un numero di lati regolabile (`3–24`, `6` di default), con il primo vertice in alto. Imposta il valore `Lati` con i pulsanti − / + o digitandolo; la forma resta regolare e uniforme, e ciascuno dei suoi punti può comunque essere trascinato per deformarla.
-  - **`⭔ Poligono per punti`** → Fai clic in un punto qualsiasi dell'immagine per posizionare punti che si collegano subito in una forma chiusa in tempo reale. Trascina un punto per regolarlo, trascina i punti medi dei bordi per inserire nuovi punti, fai clic destro su un punto per eliminarlo o trascina il centro `⊕` per spostare l'intero poligono.
-  - **`☆ Stella`** → Stella regolare con un numero di `Punte` regolabile (`3–24`, `5` di default), con i punti interni al 45 % del raggio esterno. Cambia il numero con i pulsanti − / + o digitandolo e trascina un punto per rimodellarla.
-  - **`♡ Cuore`** → Cuore classico con due lobi arrotondati e una punta inferiore netta, adattato al riquadro che disegni. Ridimensionalo, ruotalo, allinealo e spostalo come qualsiasi altra forma.
-  - **`◎ Anello`** → Anello circolare / ellittico con `Spessore dell'anello` regolabile (`0,5-100 mm`).
-  - **`✎ Lazo a mano libera`** → Disegna un anello a mano libera e riposizionalo se necessario.
-- Sfumatura dei bordi (`0–25 mm`): ammorbidisce i bordi della maschera per transizioni di incisione e stampa UV / inchiostro.
-- Annulla / Ripristina completo (`↶ Indietro`, `↷ Ripristina`): pulsanti del pannello laterale e della tela, `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` o `Ctrl/Cmd+Maiusc+Z`.
-- Più forme contemporaneamente: ogni forma è numerata nell'elenco e può essere selezionata con `Tab` / `Maiusc+Tab`, copiata / incollata o eliminata.
-- Forma centrata con 1 clic (`⊕ Crea forma centrata`): posiziona all'istante una forma centrata e regolabile, adattata alla tua immagine.
-- Gestione delle maschere: salva, esporta (.json, .png) o importa (.svg, .png, .jpg, .jpeg, .webp, .json) file di maschera.
-- Forme modificabili: tutte le forme create restano modificabili finché non fai clic su `Applica`, e possono essere gestite.
-- Supporto per scorciatoie da tastiera / mouse.
+**Generale**
+- Supporto per **Windows** e **macOS**.
+- Interfaccia multilingua: inglese, francese, tedesco, spagnolo, italiano.
+- Installer autonomo e portatile: scarica automaticamente il binario di **Node.js** necessario nella cartella `node` se non è già presente.
+
+**Mascheratura istantanea**
+- Mantieni o cancella istantaneamente aree della maschera di un'immagine con forme geometriche, poligoni personalizzati, tracciati a mano libera o file di maschera importati — senza alcuna elaborazione IA.
+- **Anteprima dal vivo**: clicca sul pulsante `Anteprima` per vedere l'immagine com'è prima di applicare (le aree rimosse vengono mostrate come una scacchiera).
+- Clicca su `✓ Applica` (o premi `Invio`) quando sei soddisfatto, oppure su `✕ Annulla` (`Esc`) per scartare.
+
+**Forme**
+
+| Forma | Descrizione |
+|---|---|
+| ○ Cerchio | Cerchio perfetto `1:1`. |
+| ⬭ Ovale / Ellisse | Ovale / ellisse a proporzioni libere con 8 maniglie di ridimensionamento. |
+| ▭ Rettangolo | Rettangolo a proporzioni libere con `Raggio degli angoli`. |
+| □ Quadrato | Quadrato a lati uguali con `Raggio degli angoli`. |
+| ⏢ Quadrilatero a 4 punti | Quattro angoli indipendenti, ideale per oggetti inclinati o in prospettiva; supporta il `Raggio degli angoli`. |
+| ⬡ Poligono regolare | `3–24` lati (predefinito `6`); ogni punto può comunque essere trascinato per deformarlo; supporta il `Raggio degli angoli`. |
+| ⭔ Poligono a punti | Clicca per posizionare i punti; trascina i punti, trascina il punto centrale di un lato per inserirne di nuovi e clicca con il tasto destro su un punto per eliminarlo. |
+| ☆ Stella | `3–24` punte (predefinito `5`) con una `Proporzione interna` regolabile (`10–90 %`, predefinito `45 %`); supporta il `Raggio degli angoli`. |
+| ♡ Cuore | Due lobi arrotondati e una punta netta, con un riquadro di ridimensionamento a 4 angoli. |
+| ◎ Anello | Anello circolare / ellittico con `Spessore dell'anello` regolabile (`0.5–100 mm`). |
+| ✎ Lasso a mano libera | Disegna un anello a mano libera e riposizionalo se necessario. |
+
+- Raggio degli angoli: `0–200 mm`.
+- Sfumatura dei bordi: `0–25 mm` (bordi morbidi per le transizioni di incisione e di stampa UV / inchiostro).
+
+**Modifica interattiva**
+- Ogni nuova forma resta in modalità di regolazione finché non la applichi.
+- Trascina il punto centrale blu `⊕` per allineare la forma al centro esatto del tuo oggetto.
+- Trascina una maniglia di bordo o di angolo per ridimensionare, o la maniglia di rotazione per ruotare, senza perdere il punto centrale.
+- Regola con precisione posizione e dimensioni in mm o pollici con i `Tasti freccia` (`Maiusc` per passi più grandi), i pulsanti di spostamento o inserendo valori esatti per larghezza, altezza e rotazione.
+- `⊕ Crea forma centrata`: posiziona istantaneamente una forma regolabile adattata alla tua immagine.
+- `↶ Indietro` / `↷ Ripristina` completi: pulsanti del pannello laterale e della tela, `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` o `Ctrl/Cmd+Maiusc+Z`.
+
+**Forme multiple**
+- Combina più forme in una sola operazione: sono numerate nell'elenco **Forme modificabili** e restano modificabili finché non clicchi su `Applica`.
+- Seleziona con `Tab` / `Maiusc+Tab` o cliccando, `Duplica` (`Ctrl/Cmd+D`), `Elimina`, e `Nascondi` / `Blocca` qualsiasi forma.
+
+**Gestione delle maschere**
+- Salva le maschere, comprese quelle a più forme, che ripristinano ogni forma (tipo, rotazione, raggio, sfumatura…) pronta per la modifica.
+- Esporta (`.json`, `.png`) o importa (`.svg`, `.png`, `.jpg`, `.jpeg`, `.webp`, `.json`).
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png">
 
@@ -159,6 +173,7 @@ Per rimuovere il plugin e ripristinare in qualsiasi momento l'archivio originale
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Ripristina**: Ripristina l'ultima modifica |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copia** la forma attiva |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Incolla** la forma copiata |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>D</kbd> | **Duplica** la forma attiva |
 | <kbd>Tab</kbd> / <kbd>Maiusc</kbd> + <kbd>Tab</kbd> | **Selezionare** la forma successiva / precedente | 
 | <kbd>Invio</kbd> | **Applica** |
 | <kbd>Esc</kbd> | **Annulla** |

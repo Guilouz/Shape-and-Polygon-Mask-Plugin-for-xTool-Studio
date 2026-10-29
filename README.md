@@ -33,7 +33,7 @@ This is a port of Gatis Udrass’s plugin, to which I have added a lot of new fe
 
 ### ✨ Key Features
 
-<img align="left" src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin.png" width="265" />
+<img align="left" src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin.png" width="270" />
 
 ### General
 - **Windows** and **macOS** support.

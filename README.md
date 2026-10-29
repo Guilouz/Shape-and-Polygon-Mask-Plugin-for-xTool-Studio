@@ -48,7 +48,7 @@ This is a port of Gatis Udrass’s plugin, to which I have added a lot of new fe
 ### Shapes
 
 <table>
-<tr><th width="180">Shape</th><th width="560">Description</th></tr>
+<tr><th width="180">Shape</th><th width="500">Description</th></tr>
 <tr><td>○ Circle</td><td>Perfect <code>1:1</code> circle.</td></tr>
 <tr><td>⬭ Oval / Ellipse</td><td>Free-aspect oval  / ellipse with 8 resize handles.</td></tr>
 <tr><td>▭ Rectangle</td><td>Free-aspect rectangle with <code>Corner Radius</code>.</td></tr>

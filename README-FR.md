@@ -16,36 +16,50 @@ Il s’agit d'un portage du plugin de Gatis Udrass, à laquelle j’ai ajouté d
 
 ### ✨ Fonctionnalités principales
 
-- Compatible Windows et macOS.
+**Général**
+- Compatible avec **Windows** et **macOS**.
 - Interface multilingue : anglais, français, allemand, espagnol, italien.
-- Installateur autonome et portable : télécharge automatiquement le binaire de **Node.js** nécessaire s'il n'est pas déjà présent dans le dossier `node`.
-- Masquage instantané (zéro temps d'attente IA) : conservez ou effacez directement des zones du masque de votre image avec des formes géométriques nettes, des polygones personnalisés ou des fichiers de masque importés.
-- Point central interactif (`⊕`) et poignées de redimensionnement / rotation :
-  - Après avoir dessiné une forme, elle reste en mode d'ajustement interactif avant d'être appliquée.
-  - Faites glisser le `point central bleu` (`⊕`) pour aligner la forme sur le centre exact de votre objet (avec des guides d'alignement en croix).
-  - Faites glisser une `poignée de bord ou de coin` pour redimensionner sans perdre votre point central.
-  - Faites glisser la `poignée de rotation` pour pivoter sans perdre votre point central.
-  - Ajustez finement la position et la taille au mm près (ou en pouces) avec les `touches fléchées` (`←`, `↑`, `↓`, `→`), les boutons de déplacement du panneau latéral, ou des valeurs saisies pour la largeur, la hauteur et la rotation.
-  - Cliquez sur **`✓ Appliquer`** (ou appuyez sur `Entrée`) une fois satisfait, ou sur **`✕ Annuler`** (`Échap`) pour abandonner.
-- 11 modes de forme intégrés (via le menu déroulant) :
-  - **`○ Cercle`** → Cercle parfait `1:1` (idéal pour les dessous de verre ronds, pièces, médaillons et ornements).
-  - **`⬭ Ovale / Ellipse`** → Ovale / ellipse à proportions libres avec 8 poignées de redimensionnement.
-  - **`▭ Rectangle`** → Rectangle à proportions libres avec `Rayon des coins` réglable (`0–200 mm`).
-  - **`□ Carré`** → Carré `1:1` à côtés égaux avec `Rayon des coins` réglable (`0–200 mm`).
-  - **`⏢ Quadrilatère 4 points`** → Quadrilatère dont chacun des 4 coins se déplace indépendamment, pour épouser des objets inclinés ou en perspective.
-  - **`⬡ Polygone régulier`** → Polygone régulier avec un nombre de côtés réglable (`3–24`, `6` par défaut), premier sommet en haut. Réglez la valeur `Côtés` avec les boutons − / + ou en la saisissant ; la forme reste régulière et uniforme, et chacun de ses points peut toujours être déplacé pour la déformer.
-  - **`⭔ Polygone par points`** → Cliquez n'importe où sur l'image pour placer des points qui se relient aussitôt en une forme fermée en direct. Faites glisser un point pour l'ajuster, glissez le milieu d'une arête pour insérer de nouveaux points, faites un clic droit sur un point pour le supprimer, ou glissez le centre `⊕` pour déplacer tout le polygone.
-  - **`☆ Étoile`** → Étoile régulière avec un nombre de `Branches` réglable (`3–24`, `5` par défaut), les points intérieurs étant placés à 45 % du rayon extérieur. Changez le nombre avec les boutons − / + ou en le saisissant, et faites glisser un point pour remodeler la forme.
-  - **`♡ Cœur`** → Cœur classique à deux lobes arrondis et pointe basse nette, ajusté à la zone que vous tracez. Redimensionnez, pivotez, alignez et déplacez-le comme n'importe quelle autre forme.
-  - **`◎ Anneau`** → Anneau circulaire / elliptique avec `Épaisseur de l'anneau` réglable (`0,5-100 mm`).
-  - **`✎ Lasso à main levée`** → Dessinez une boucle à main levée et repositionnez-la si besoin.
-- Adoucissement des bords (`0–25 mm`) : adoucit les bords du masque pour des transitions soignées en gravure et en impression UV / encre.
-- Annuler / Rétablir complets (`↶ Retour`, `↷ Rétablir`) : boutons du panneau latéral et du canevas, `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` ou `Ctrl/Cmd+Maj+Z`.
-- Plusieurs formes à la fois : chaque forme est numérotée dans la liste, peut être sélectionnée avec `Tab` / `Maj+Tab`, copiée / collée ou supprimée.
-- Forme centrée en 1 clic (`⊕ Créer une forme centrée`) : place instantanément une forme centrée et ajustable, adaptée à votre image.
-- Gestion des masques : enregistrez, exportez (.json, .png) ou importez (.svg, .png, .jpg, .jpeg, .webp, .json) des fichiers de masque.
-- Formes modifiables : toutes les formes créées restent modifiables jusqu'à ce que vous cliquiez sur `Appliquer`, et elles peuvent être gérées.
-- Prise en charge des raccourcis clavier / souris.
+- Installateur autonome et portable : télécharge automatiquement le binaire **Node.js** nécessaire dans le dossier `node` s'il n'est pas déjà présent.
+
+**Masquage instantané**
+- Conservez ou effacez instantanément des zones du masque d'une image avec des formes géométriques, des polygones personnalisés, des tracés à main levée ou des fichiers de masque importés — sans aucun traitement par IA.
+- **Aperçu en direct** : cliquez sur le bouton `Aperçu` pour voir l'image telle qu'elle sera avant d'appliquer (les zones retirées s'affichent sous forme de damier).
+- Cliquez sur `✓ Appliquer` (ou appuyez sur `Entrée`) une fois satisfait, ou sur `✕ Annuler` (`Échap`) pour abandonner.
+
+**Formes**
+
+| Forme | Description |
+|---|---|
+| ○ Cercle | Cercle parfait `1:1`. |
+| ⬭ Ovale / Ellipse | Ovale / ellipse à proportions libres avec 8 poignées de redimensionnement. |
+| ▭ Rectangle | Rectangle à proportions libres avec `Rayon des coins`. |
+| □ Carré | Carré à côtés égaux avec `Rayon des coins`. |
+| ⏢ Quadrilatère 4 points | Quatre coins indépendants, idéal pour les objets en biais ou en perspective ; prend en charge le `Rayon des coins`. |
+| ⬡ Polygone régulier | `3–24` côtés (par défaut `6`) ; chaque point peut toujours être déplacé pour le déformer ; prend en charge le `Rayon des coins`. |
+| ⭔ Polygone par points | Cliquez pour placer des points ; déplacez les points, déplacez le milieu d'un côté pour insérer de nouveaux points, faites un clic droit sur un point pour le supprimer. |
+| ☆ Étoile | `3–24` branches (par défaut `5`) avec un `Ratio intérieur` réglable (`10–90 %`, par défaut `45 %`) ; prend en charge le `Rayon des coins`. |
+| ♡ Cœur | Deux lobes arrondis et une pointe nette, avec une boîte de redimensionnement à 4 coins. |
+| ◎ Anneau | Anneau circulaire / elliptique avec `Épaisseur de l'anneau` réglable (`0.5–100 mm`). |
+| ✎ Lasso à main levée | Dessinez une boucle à main levée, puis repositionnez-la. |
+
+- Rayon des coins : `0–200 mm`.
+- Flou des bords : `0–25 mm` (bords adoucis pour les transitions de gravure et d'impression UV / encre).
+
+**Édition interactive**
+- Chaque nouvelle forme reste en mode ajustement jusqu'à ce que vous l'appliquiez.
+- Faites glisser le point central bleu `⊕` pour aligner la forme sur le centre exact de votre objet.
+- Faites glisser une poignée de bord ou de coin pour redimensionner, ou la poignée de rotation pour pivoter, sans perdre le point central.
+- Ajustez finement la position et la taille en mm ou en pouces avec les `Touches fléchées` (`Maj` pour des pas plus grands), les boutons de déplacement, ou en saisissant des valeurs exactes pour la largeur, la hauteur et la rotation.
+- `⊕ Créer une forme centrée` : place instantanément une forme réglable adaptée à votre image.
+- `↶ Retour` / `↷ Rétablir` complets : boutons du panneau latéral et du canevas, `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` ou `Ctrl/Cmd+Maj+Z`.
+
+**Formes multiples**
+- Combinez plusieurs formes en une seule opération : elles sont numérotées dans la liste **Formes éditables** et restent modifiables jusqu'à ce que vous cliquiez sur `Appliquer`.
+- Sélectionnez avec `Tab` / `Maj+Tab` ou en cliquant, `Dupliquer` (`Ctrl/Cmd+D`), `Supprimer`, et `Masquer` / `Verrouiller` n'importe quelle forme.
+
+**Gestion des masques**
+- Enregistrez des masques, y compris des masques multi-formes qui restaurent chaque forme (type, rotation, rayon, flou…) prête à être modifiée.
+- Exportez (`.json`, `.png`) ou importez (`.svg`, `.png`, `.jpg`, `.jpeg`, `.webp`, `.json`).
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png">
 
@@ -159,6 +173,7 @@ Pour supprimer le plugin et restaurer à tout moment l'archive d'origine non mod
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Rétablir** : Restaure la dernière modification |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | **Copier** la forme active |
 | <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | **Coller** la forme copiée |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>D</kbd> | **Dupliquer** la forme active |
 | <kbd>Tab</kbd> / <kbd>Maj</kbd> + <kbd>Tab</kbd> | **Sélectionner** la forme suivante / précédente | 
 | <kbd>Entrée</kbd> | **Appliquer** |
 | <kbd>Échap</kbd> | **Annuler** |

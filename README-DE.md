@@ -16,36 +16,50 @@ Dies ist eine Portierung des Plugins von Gatis Udrass, die ich um neue Funktione
 
 ### ✨ Hauptfunktionen
 
-- Unterstützung für Windows und macOS.
-- Mehrsprachige Unterstützung: Englisch, Französisch, Deutsch, Spanisch, Italienisch.
-- Eigenständiger und portabler Installer: Lädt automatisch die benötigte Binärdatei von **Node.js** herunter, falls sie nicht bereits im Ordner `node` vorhanden ist.
-- Sofortmaskierung (null KI-Wartezeit): Behalte oder lösche Bereiche der Maske deines Bildes direkt mit scharfen geometrischen Formen, benutzerdefinierten Polygonen oder importierten Maskendateien.
-- Interaktiver Mittelpunkt (`⊕`) und Griffe zum Skalieren / Drehen:
-  - Nach dem Zeichnen einer Form bleibt sie in einem interaktiven Anpassungsmodus, bevor sie angewendet wird.
-  - Ziehe den `blauen Mittelpunkt` (`⊕`), um die Form genau auf die Mitte deines Objekts auszurichten (mit Fadenkreuz-Hilfslinien).
-  - Ziehe einen beliebigen `Kanten- oder Eckgriff`, um die Größe zu ändern, ohne den Mittelpunkt zu verlieren.
-  - Ziehe den `Drehgriff`, um zu drehen, ohne den Mittelpunkt zu verlieren.
-  - Passe Position und Größe millimetergenau (oder in Zoll) an, mit den `Pfeiltasten` (`←`, `↑`, `↓`, `→`), den Verschiebe-Schaltflächen im Seitenpanel oder eingetippten Werten für Breite, Höhe und Drehung.
-  - Klicke auf **`✓ Anwenden`** (oder drücke `Eingabetaste`), wenn du zufrieden bist, oder auf **`✕ Abbrechen`** (`Esc`), um zu verwerfen.
-- 11 integrierte Formmodi (über das Dropdown-Menü):
-  - **`○ Kreis`** → Perfekter `1:1`-Kreis (ideal für runde Untersetzer, Münzen, Medaillons und Ornamente).
-  - **`⬭ Oval / Ellipse`** → Oval / Ellipse mit freiem Seitenverhältnis und 8 Skalierungsgriffen.
-  - **`▭ Rechteck`** → Rechteck mit freiem Seitenverhältnis und einstellbarem `Eckenradius` (`0–200 mm`).
-  - **`□ Quadrat`** → Quadrat `1:1` mit gleich langen Seiten und einstellbarem `Eckenradius` (`0–200 mm`).
-  - **`⏢ 4-Punkt-Viereck`** → Viereck, dessen 4 Ecken einzeln gezogen werden können, um schräge oder perspektivisch verzerrte Objekte nachzubilden.
-  - **`⬡ Regelmäßiges Polygon`** → Regelmäßiges Vieleck mit einstellbarer Seitenzahl (`3–24`, Standard `6`), erster Eckpunkt oben. Stelle den Wert `Seiten` mit den Schaltflächen − / + oder per Eingabe ein; die Form bleibt regelmäßig und gleichmäßig, und jeder ihrer Punkte lässt sich weiterhin ziehen, um sie zu verformen.
-  - **`⭔ Polygon aus Punkten`** → Klicke an eine beliebige Stelle im Bild, um Punkte zu setzen, die sich sofort zu einer geschlossenen Live-Form verbinden. Ziehe einen Punkt, um ihn anzupassen, ziehe Kantenmittelpunkte, um neue Punkte einzufügen, klicke mit der rechten Maustaste auf einen Punkt, um ihn zu löschen, oder ziehe die Mitte `⊕`, um das gesamte Polygon zu verschieben.
-  - **`☆ Stern`** → Regelmäßiger Stern mit einstellbarer Anzahl von `Zacken` (`3–24`, Standard `5`), wobei die inneren Punkte bei 45 % des äußeren Radius liegen. Ändere die Anzahl mit den Schaltflächen − / + oder per Eingabe und ziehe einen beliebigen Punkt, um die Form zu verändern.
-  - **`♡ Herz`** → Klassisches Herz mit zwei runden Wölbungen und scharfer Spitze unten, eingepasst in den von dir gezeichneten Rahmen. Skaliere, drehe, richte aus und verschiebe es wie jede andere Form.
-  - **`◎ Ring`** → Kreis- / ellipsenförmiger Ring mit einstellbarer `Ringdicke` (`0,5-100 mm`).
-  - **`✎ Freihand-Lasso`** → Zeichne eine Freihandschleife und positioniere sie bei Bedarf neu.
-- Kantenweichzeichnung (`0–25 mm`): Weicht die Maskenkanten für Übergänge bei Gravur und UV-/Tintendruck auf.
-- Vollständiges Rückgängig / Wiederholen (`↶ Rückgängig`, `↷ Wiederholen`): Schaltflächen im Seitenpanel und auf der Zeichenfläche, `Strg/Cmd+Z`, `Strg/Cmd+Y` oder `Strg/Cmd+Umschalt+Z`.
-- Mehrere Formen gleichzeitig: Jede Form ist in der Liste nummeriert und lässt sich mit `Tab` / `Umschalt+Tab` auswählen, kopieren / einfügen oder löschen.
-- Zentrierte Form per Klick (`⊕ Zentrierte Form erstellen`): Platziert sofort eine zentrierte, anpassbare Form, die zu deinem Bild passt.
-- Maskenverwaltung: Speichere, exportiere (.json, .png) oder importiere (.svg, .png, .jpg, .jpeg, .webp, .json) Maskendateien.
-- Bearbeitbare Formen: Alle erstellten Formen bleiben bearbeitbar, bis du auf `Anwenden` klickst, und können verwaltet werden.
-- Unterstützung für Tastatur-/Maus-Kürzel.
+**Allgemein**
+- Unterstützung für **Windows** und **macOS**.
+- Mehrsprachige Oberfläche: Englisch, Französisch, Deutsch, Spanisch, Italienisch.
+- Eigenständiger und portabler Installer: Lädt automatisch die benötigte **Node.js**-Binärdatei in den Ordner `node` herunter, falls sie noch nicht vorhanden ist.
+
+**Sofort-Maskierung**
+- Behalten oder löschen Sie Bereiche einer Bildmaske sofort mit geometrischen Formen, benutzerdefinierten Polygonen, Freihandschleifen oder importierten Maskendateien — ganz ohne KI-Verarbeitung.
+- **Live-Vorschau**: Klicken Sie auf die Schaltfläche `Vorschau`, um das Bild vor dem Anwenden so zu sehen, wie es aussehen wird (entfernte Bereiche werden als Schachbrettmuster dargestellt).
+- Klicken Sie auf `✓ Anwenden` (oder drücken Sie `Enter`), wenn Sie zufrieden sind, oder auf `✕ Abbrechen` (`Esc`), um zu verwerfen.
+
+**Formen**
+
+| Form | Beschreibung |
+|---|---|
+| ○ Kreis | Perfekter `1:1`-Kreis. |
+| ⬭ Oval / Ellipse | Oval / Ellipse mit freiem Seitenverhältnis und 8 Skalierungsgriffen. |
+| ▭ Rechteck | Rechteck mit freiem Seitenverhältnis und `Eckenradius`. |
+| □ Quadrat | Quadrat mit gleich langen Seiten und `Eckenradius`. |
+| ⏢ Viereck (4 Punkte) | Vier unabhängige Ecken, ideal für schräge oder perspektivisch verzerrte Objekte; unterstützt `Eckenradius`. |
+| ⬡ Regelmäßiges Polygon | `3–24` Seiten (Standard `6`); jeder Punkt kann weiterhin gezogen werden, um die Form zu verformen; unterstützt `Eckenradius`. |
+| ⭔ Punkt-Polygon | Klicken Sie, um Punkte zu setzen; ziehen Sie Punkte, ziehen Sie Kantenmittelpunkte, um neue Punkte einzufügen, und klicken Sie mit der rechten Maustaste auf einen Punkt, um ihn zu löschen. |
+| ☆ Stern | `3–24` Zacken (Standard `5`) mit einstellbarem `Innenverhältnis` (`10–90 %`, Standard `45 %`); unterstützt `Eckenradius`. |
+| ♡ Herz | Zwei runde Rundungen und eine scharfe Spitze, mit einem Skalierungsrahmen mit 4 Ecken. |
+| ◎ Ring | Kreis- / Ellipsenring mit einstellbarer `Ringbreite` (`0.5–100 mm`). |
+| ✎ Freihand-Lasso | Zeichnen Sie eine Freihandschleife und positionieren Sie sie bei Bedarf neu. |
+
+- Eckenradius: `0–200 mm`.
+- Weiche Kante: `0–25 mm` (weiche Kanten für Übergänge beim Gravieren und beim UV- / Tintendruck).
+
+**Interaktive Bearbeitung**
+- Jede neue Form bleibt im Anpassungsmodus, bis Sie sie anwenden.
+- Ziehen Sie den blauen Mittelpunkt `⊕`, um die Form genau an der Mitte Ihres Objekts auszurichten.
+- Ziehen Sie einen Kanten- oder Eckgriff zum Skalieren oder den Drehgriff zum Drehen, ohne den Mittelpunkt zu verlieren.
+- Position und Größe lassen sich in mm oder Zoll mit den `Pfeiltasten` (`Umschalt` für größere Schritte), den Verschiebe-Schaltflächen oder durch Eingabe exakter Werte für Breite, Höhe und Drehung fein einstellen.
+- `⊕ Zentrierte Form erstellen`: Platziert sofort eine einstellbare, an Ihr Bild angepasste Form.
+- Vollständiges `↶ Rückgängig` / `↷ Wiederholen`: Schaltflächen im Seitenpanel und auf der Zeichenfläche, `Strg/Cmd+Z`, `Strg/Cmd+Y` oder `Strg/Cmd+Umschalt+Z`.
+
+**Mehrere Formen**
+- Kombinieren Sie mehrere Formen in einem Vorgang: Sie werden in der Liste **Bearbeitbare Formen** nummeriert und bleiben bearbeitbar, bis Sie auf `Anwenden` klicken.
+- Auswahl mit `Tab` / `Umschalt+Tab` oder per Klick, `Duplizieren` (`Strg/Cmd+D`), `Löschen` sowie `Ausblenden` / `Sperren` jeder Form.
+
+**Maskenverwaltung**
+- Speichern Sie Masken, auch Masken mit mehreren Formen, die jede Form (Typ, Drehung, Radius, weiche Kante …) bearbeitungsbereit wiederherstellen.
+- Exportieren (`.json`, `.png`) oder importieren (`.svg`, `.png`, `.jpg`, `.jpeg`, `.webp`, `.json`).
 
 <img src="https://raw.githubusercontent.com/Guilouz/Shape-and-Polygon-Mask-Plugin-for-xTool-Studio/refs/heads/main/images/plugin1.png">
 
@@ -159,6 +173,7 @@ So entfernen Sie das Plugin und stellen jederzeit das unveränderte Original-Arc
 | <kbd>Strg</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd> | **Wiederholen**: Stellt die letzte Änderung wieder her |
 | <kbd>Strg</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd> | Aktive Form **kopieren** |
 | <kbd>Strg</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd> | Kopierte Form **einfügen** |
+| <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>D</kbd> | Die aktive Form **duplizieren** |
 | <kbd>Tab</kbd> / <kbd>Umschalt</kbd> + <kbd>Tab</kbd> | Nächste / vorherige Form **auswählen** | 
 | <kbd>Eingabe</kbd> | **Anwenden** |
 | <kbd>Esc</kbd> | **Abbrechen** |

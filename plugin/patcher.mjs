@@ -6,7 +6,7 @@ import { execFileSync } from 'child_process';
 import readline from 'readline';
 import { fileURLToPath, pathToFileURL } from 'url';
 
-const plugin_version = "5.3.0"
+const plugin_version = "5.4.0"
 
 const IS_WIN = process.platform === 'win32';
 const IS_MAC = process.platform === 'darwin';
@@ -313,7 +313,7 @@ async function selectPluginDir(version) {
     console.log(`⚠️  ${yellow}No plugin for xTool Studio ${version ?? '(unknown)'} — closest available: ${found.folder}.${reset}`);
     console.log(`   The patch checks every target and aborts without writing anything if the code does not match.`);
     const ok = process.env.XTOOL_PLUGIN_ALLOW_FALLBACK === '1' || await confirmYesNo(`Try with the plugins for "${found.folder}"? (y/N) : `);
-    if (!ok) throw new Error(`❌ ${red}Installation cancelled: no plugin for xTool Studio ${version ?? '(unknown)'}.${reset}\n`);
+    if (!ok) throw new Error(`❌ ${red}Installation cancelled: No plugin for xTool Studio ${version ?? '(unknown)'}.${reset}\n`);
   }
   return found;
 }
@@ -456,11 +456,11 @@ export function computeIntegrity(buf) {
 export function findRouterEntry(header) {
   const jsFiles = header?.files?.['.vite']?.files?.['renderer']?.files?.['editor']?.files?.['static']?.files?.['js']?.files;
   if (!jsFiles) {
-    throw new Error('❌ ${red}Could not find .vite/renderer/editor/static/js directory inside app.asar.${reset}');
+    throw new Error(`❌ ${red}Could not find .vite/renderer/editor/static/js directory inside app.asar.${reset}`);
   }
   const routerName = Object.keys(jsFiles).find(name => /^router\..*\.js$/.test(name));
   if (!routerName) {
-    throw new Error('❌ ${red}Could not find router.*.js inside app.asar.${reset}');
+    throw new Error(`❌ ${red}Could not find router.*.js inside app.asar.${reset}`);
   }
   return {
     fileName: routerName,
@@ -925,7 +925,9 @@ if (isMainModule()) {
         await checkStatus();
       }
     } catch (err) {
-      console.error(`\n❌ ${red}Error: ${err.message}${reset}`);
+      // Messages that already start with ❌ are shown as is; others (Node/system errors) get the ❌ + red style
+      const msg = String(err?.message ?? err).trimEnd();
+      console.error(msg.startsWith('❌') ? msg : `❌ ${red}${msg}${reset}`);
       if (err.code === 'EACCES' || err.code === 'EPERM') {
         console.error(permissionHint(err));
       }

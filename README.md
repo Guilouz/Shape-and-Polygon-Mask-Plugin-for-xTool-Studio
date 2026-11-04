@@ -28,6 +28,7 @@ This is a port of Gatis Udrass’s plugin, to which I have added a lot of new fe
 
 - xTool Studio v1.9.11
 - xTool Studio Pre-Release v1.10.2
+- xTool Studio v1.10.15
 
 <br />
 

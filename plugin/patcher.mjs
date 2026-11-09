@@ -6,7 +6,7 @@ import { execFileSync } from 'child_process';
 import readline from 'readline';
 import { fileURLToPath, pathToFileURL } from 'url';
 
-const plugin_version = "5.4.0"
+const plugin_version = "5.5.0"
 
 const IS_WIN = process.platform === 'win32';
 const IS_MAC = process.platform === 'darwin';
@@ -688,7 +688,7 @@ export async function checkStatus() {
   if (IS_MAC) {
     console.log(`📄 Plist Backup   → ${fs.existsSync(plistBackupPath) ? 'YES (' + plistBackupPath + ')' : 'NO'}`);
   }
-  console.log(`🔖 Plugin Version → ${plugin_version}`);
+  console.log(`🔖 Plugin Version → v${plugin_version}`);
   const pluginStatusText = isPatched ? '✅ INSTALLED' : '⚪ NOT INSTALLED';
   const statusDisplay = installedLang ? `${pluginStatusText} - ${installedLang}` : pluginStatusText;
   console.log(`📦 Plugin Status  → ${statusDisplay}`);
